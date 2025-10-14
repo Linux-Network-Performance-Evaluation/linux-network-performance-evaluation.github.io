@@ -5,8 +5,6 @@
   "homepage": "https://linux-network-performance-evaluation.github.io/",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --nojekyll",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
