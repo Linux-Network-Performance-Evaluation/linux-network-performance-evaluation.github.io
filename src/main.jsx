@@ -6,7 +6,7 @@ import './theme/rd.scss'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={window.location.pathname || ''}>
       <App />
     </BrowserRouter>
   </StrictMode>
