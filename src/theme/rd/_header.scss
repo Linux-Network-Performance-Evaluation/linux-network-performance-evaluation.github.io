@@ -1,12 +1,12 @@
 header {
-	padding: 2rem 0;
+	padding-top: calc(1.5rem + 3vh);
+	padding-bottom: calc(2rem - 2vh);
 }
 
 header h1 {
 	font-size: 2.8em;
-	line-height: 1.1;
 	font-weight: 500;
-	text-align: justify;
+	text-align: center;
 	margin-bottom: 0;
 	white-space: nowrap;
 	text-decoration: none;
@@ -14,4 +14,54 @@ header h1 {
 
 header h2 {
 	text-align: center;
+}
+
+@media (min-width: 318px) {
+	header {
+		padding-top: calc(3.5rem + 3vh);
+		padding-bottom: calc(1rem - 2vh);
+	}
+
+	header h1 {
+		font-size: 1.15rem;
+		line-height: 1rem;
+		white-space: wrap;
+	}
+
+	header h2 {
+		font-size: 1rem;
+		padding-top: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		padding-top: 1rem;
+		padding-bottom: 0.5rem;
+	}
+
+	header h1 {
+		font-size: 0.75rem;
+		line-height: 2.5rem;
+	}
+
+	header h2 {
+		font-size: 0.75rem;
+	}
+}
+
+@media (min-width: 992px) {
+	header {
+		padding-top: calc(1.5rem + 3vh);
+		padding-bottom: calc(2rem - 2vh);
+	}
+
+	header h1 {
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+	}
+
+	header h2 {
+		font-size: 2rem;
+	}
 }

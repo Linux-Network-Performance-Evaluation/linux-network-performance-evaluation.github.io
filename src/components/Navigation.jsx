@@ -10,7 +10,7 @@ function Navigation() {
         <Navbar expand="sm" className="fixed-top justify-content-end">
             <Container>
                 <Navbar.Brand as={Link} to="/"><img src={logo} alt="Logo" /></Navbar.Brand>
-                <Nav variant="tabs">
+                <Nav as="ul" variant="tabs" className="justify-content-end align-items-center">
                     <Nav.Item as="li" className="mx-2 mx-md-1">
                         <Nav.Link as={Link} to="/" active={location.pathname === '/'}>About</Nav.Link>
                     </Nav.Item>

@@ -38,6 +38,45 @@ h1 {
   text-decoration: underline;
 }
 
+@media (min-width: 318px) {
+  header {
+    padding-top: calc(6rem + 3vh);
+    padding-bottom: calc(2rem - 2vh);
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    padding-top: calc(6rem + 3vh);
+    padding-bottom: calc(2rem - 2vh);
+  }
+
+  header h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* Links */
 a {
   font-weight: 500;

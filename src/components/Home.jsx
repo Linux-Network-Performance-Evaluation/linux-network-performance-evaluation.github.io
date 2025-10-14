@@ -3,13 +3,13 @@ function Home() {
     return (
         <>
             {/* Project Overview Section */}
-            <section>
+            <section className="justify-content-end align-items-center">
                 <h2>Project Overview</h2>
                 <p>This portfolio presents our project evaluating the performance of Linux-based operating systems in a physical environment. Explore each section using the navigation tabs above to learn about our research, planning, teamwork, development, and more.</p>
             </section>
 
             {/* Project Objectives Section */}
-            <section id="objectives">
+            <section className="justify-content-end align-items-center">
                 <h2>Project Objectives</h2>
                 <p>The goal of this project is to evaluate the performance of three latest Linux-based Operating System distributions – <strong>Fedora, Ubuntu, and Kali Linux</strong>. These operating systems need to be configured as software routers before running evaluations. Tools such as <strong>D-ITG</strong> and <strong>iPerf</strong> will be used to generate evaluation traffic.</p>
                 <h3>Objectives to be achieved include:</h3>
