@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
-import CommunicationTeamwork from './components/CommunicationTeamwork.jsx'
-import DevelopmentQA from './components/DevelopmentQA.jsx'
-import Footer from './components/Footer.jsx'
-import Header from './components/Header.jsx'
-import Home from './components/Home.jsx'
-import Navbar from './components/Navigation.jsx'
-import PlanningControl from './components/PlanningControl.jsx'
-import Poster from './components/Poster.jsx'
-import ResearchUpskilling from './components/ResearchUpskilling.jsx'
+import CommunicationTeamwork from './components/CommunicationTeamwork'
+import DevelopmentQA from './components/DevelopmentQA'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Home from './components/Home'
+import Navbar from './components/Navigation'
+import PlanningControl from './components/PlanningControl'
+import Poster from './components/Poster'
+import ResearchUpskilling from './components/ResearchUpskilling'
 
 function App() {
 
