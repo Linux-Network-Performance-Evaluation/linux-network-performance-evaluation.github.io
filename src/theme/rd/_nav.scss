@@ -2,8 +2,13 @@
 
 .navbar-nav {
 	flex-flow: row nowrap;
+	white-space: nowrap;
 }
 
 .navbar-nav .nav-item {
 	list-style: none;
+}
+
+.navbar-brand img {
+	width: 10%;
 }
