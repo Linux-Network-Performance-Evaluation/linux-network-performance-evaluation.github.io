@@ -9,7 +9,7 @@ function Footer() {
                 <Row>
                     <Col md={8}>
                         <small className="text-muted">
-                            &copy; <CurrentYear /> Linux Network Performance Evaluation Physical Team
+                            &copy; <CurrentYear /> Linux Network Performance Evaluation - Physical Team - Semester 2, 2025
                         </small>
                     </Col>
                     <Col md={4} className="text-md-end">

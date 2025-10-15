@@ -6,7 +6,7 @@ function Header() {
         <header>
             <Container>
                 <h1>Network Performance Evaluation on Linux-Based Operating Systems</h1>
-                <h2>Physical Team</h2>
+                <h2>Physical Team - Semester 2 2025</h2>
             </Container>
         </header>
     )
