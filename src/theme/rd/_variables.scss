@@ -4,6 +4,7 @@
    ========================================================================== */
 
 /* Typography */
+$font-family-base: "Helia Core", Helvetica, Arial, sans-serif !default;
 
 /* Colors */
 $gray: #7a8288 !default;
@@ -12,28 +13,28 @@ $darker-gray: color.mix(#000, $gray, 60%) !default;
 $light-gray: color.mix(#fff, $gray, 50%) !default;
 $lighter-gray: color.mix(#fff, $gray, 90%) !default;
 
-$background-color: #effcff !default;
+$background-color: #f8fcff !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: #195362 !default;
-$muted-text-color: color.mix(#fff, $text-color, 20%) !default;
+$muted-text-color: color.mix(#fff, $text-color, 30%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
-$footer-background-color: $lighter-gray !default;
+$footer-background-color: #f8f9fa !default;
 
 $primary-color: #aadae6 !default;
 $primary-color-rgb: rgb(170, 218, 230) !default;
 $secondary-color: #6fb5c7 !default;
 $secondary-color-dark: rgb(111, 181, 199) !default;
-$success-color: #3fa63f !default;
-$warning-color: #d67f05 !default;
-$danger-color: #ee5f5b !default;
+$success-color: #28a745 !default;
+$warning-color: #ffc107 !default;
+$danger-color: #dc3545 !default;
 $info-color: $primary-color !default;
 $focus-color: $primary-color !default;
 $active-color: color.mix(#fff, $primary-color, 80%) !default;
 
 // Links
-$link-color: color.mix(#000, $info-color, 20%) !default;
+$link-color: color.mix(#000, $info-color, 30%) !default;
 $link-color-hover: color.mix(#000, $link-color, 25%) !default;
 $link-color-visited: color.mix(#fff, $link-color, 15%) !default;
 $masthead-link-color: $primary-color !default;
@@ -43,6 +44,14 @@ $navicon-link-color-hover: color.mix(#fff, $primary-color, 75%) !default;
 // Notices
 $notice-background-mix: 80% !default;
 $code-notice-background-mix: 90% !default;
+
+// Responsive breakpoints
+$breakpoint-xs: 0 !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+$breakpoint-xxl: 1400px !default;
 
 // Syntax Highlighting (base16)
 $base00: #263238 !default;
