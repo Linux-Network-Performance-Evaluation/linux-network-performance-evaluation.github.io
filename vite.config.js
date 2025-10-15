@@ -11,4 +11,18 @@ export default defineConfig({
     }),
   ],
   base: '/',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // Suppress deprecation warnings from third-party libraries like Bootstrap
+        quietDeps: true,
+        silenceDeprecations: [
+          'import', 
+          'global-builtin', 
+          'color-functions',
+          'slash-div'
+        ]
+      }
+    }
+  }
 })

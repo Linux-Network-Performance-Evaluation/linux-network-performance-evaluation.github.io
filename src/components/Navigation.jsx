@@ -3,37 +3,78 @@ import { Link, useLocation } from "react-router-dom";
 import logo from '/assets/logo.png';
 
 function Navigation() {
-
     const location = useLocation()
 
     return (
-        <Navbar expand="sm" className="fixed-top justify-content-end">
+        <Navbar expand="lg" className="fixed-top" variant="light">
             <Container>
-                <Navbar.Brand as={Link} to="/"><img src={logo} alt="Logo" /></Navbar.Brand>
-                <Nav as="ul" variant="tabs" className="justify-content-end align-items-center">
-                    <Nav.Item as="li" className="mx-2 mx-md-1">
-                        <Nav.Link as={Link} to="/" active={location.pathname === '/'}>About</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item as="li" className="mx-2 mx-md-1">
-                        <Nav.Link as={Link} to="/research-upskilling" active={location.pathname === '/research-upskilling'}>Research & Upskilling</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item as="li" className="mx-2 mx-md-1">
-                        <Nav.Link as={Link} to="/planning-control" active={location.pathname === '/planning-control'}>Planning & Control</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item as="li" className="mx-2 mx-md-1">
-                        <Nav.Link as={Link} to="/communication-teamwork" active={location.pathname === '/communication-teamwork'}>Communication & Teamwork</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item as="li" className="mx-2 mx-md-1">
-                        <Nav.Link as={Link} to="/development-qa" active={location.pathname === '/development-qa'}>Development & Quality Assurance</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item as="li" className="mx-2 mx-md-1">
-                        <Nav.Link as={Link} to="/poster" active={location.pathname === '/poster'}>Poster</Nav.Link>
-                    </Nav.Item>
-                </Nav>
+                <Navbar.Brand as={Link} to="/">
+                    <img src={logo} alt="Network Performance Evaluation Logo" />
+                </Navbar.Brand>
+                
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ms-auto">
+                        <Nav.Item>
+                            <Nav.Link 
+                                as={Link} 
+                                to="/" 
+                                className={location.pathname === '/' ? 'active' : ''}
+                            >
+                                About
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link 
+                                as={Link} 
+                                to="/research-upskilling" 
+                                className={location.pathname === '/research-upskilling' ? 'active' : ''}
+                            >
+                                Research & Upskilling
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link 
+                                as={Link} 
+                                to="/planning-control" 
+                                className={location.pathname === '/planning-control' ? 'active' : ''}
+                            >
+                                Planning & Control
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link 
+                                as={Link} 
+                                to="/communication-teamwork" 
+                                className={location.pathname === '/communication-teamwork' ? 'active' : ''}
+                            >
+                                Communication & Teamwork
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link 
+                                as={Link} 
+                                to="/development-qa" 
+                                className={location.pathname === '/development-qa' ? 'active' : ''}
+                            >
+                                Development & QA
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link 
+                                as={Link} 
+                                to="/poster" 
+                                className={location.pathname === '/poster' ? 'active' : ''}
+                            >
+                                Poster
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     )
-
 }
 
 export default Navigation

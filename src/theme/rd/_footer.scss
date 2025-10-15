@@ -1,5 +1,18 @@
+@use "./variables" as *;
+
 footer {
-	text-align: center;
-	padding-top: 2rem;
-	padding-bottom: 0;
+  background-color: $footer-background-color;
+  border-top: 1px solid $border-color;
+  margin-top: auto;
+  
+  .text-muted {
+    color: $muted-text-color !important;
+  }
+}
+
+/* Ensure footer stays at bottom */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

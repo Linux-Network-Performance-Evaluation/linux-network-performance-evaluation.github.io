@@ -1,15 +1,12 @@
-/* Bootstrap */
-@use 'bootstrap/scss/bootstrap';
+/* Import Bootstrap separately */
+@use "bootstrap";
 
-/* Main CSS */
+/* Use modern @use for our custom modules */
+@use "rd/variables";
 @use "rd/main";
-
-/* Mixins */
 @use "rd/nav";
 @use "rd/image";
 @use "rd/document";
 @use "rd/header";
 @use "rd/footer";
-
-/* Components */
 @use "rd/font";
