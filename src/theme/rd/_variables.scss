@@ -13,19 +13,36 @@ $darker-gray: color.mix(#000, $gray, 60%) !default;
 $light-gray: color.mix(#fff, $gray, 50%) !default;
 $lighter-gray: color.mix(#fff, $gray, 90%) !default;
 
-$background-color: #f8fcff !default;
+/* New accent colors */
+$accent-primary: #60a0b1 !default;
+$accent-light: #effcff !default; 
+$accent-dark: #195362 !default;
+$accent-dark-light: color.mix(#fff, $accent-dark, 30%) !default; // Lighter version for better contrast
+
+/* Light mode colors */
+$background-color: $accent-light !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
-$text-color: #195362 !default;
-$muted-text-color: color.mix(#fff, $text-color, 30%) !default;
+$text-color: $accent-dark !default;
+$nav-text-color: $accent-dark-light !default; // Lighter text for navigation
+$muted-text-color: color.mix(#000, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
-$footer-background-color: #f8f9fa !default;
+$footer-background-color: #ffffff !default;
 
-$primary-color: #aadae6 !default;
-$primary-color-rgb: rgb(170, 218, 230) !default;
-$secondary-color: #6fb5c7 !default;
-$secondary-color-dark: rgb(111, 181, 199) !default;
+/* Dark mode colors */
+$dark-background-color: #0d1117 !default;
+$dark-surface-color: #161b22 !default;
+$dark-card-color: #21262d !default;
+$dark-text-color: $accent-light !default;
+$dark-muted-text-color: color.mix($accent-light, $accent-primary, 70%) !default;
+$dark-border-color: color.mix($accent-dark, #000, 60%) !default;
+$dark-footer-background: #0d1117 !default;
+
+$primary-color: $accent-primary !default;
+$primary-color-rgb: rgb(96, 160, 177) !default;
+$secondary-color: color.mix($accent-primary, $accent-dark, 70%) !default;
+$secondary-color-dark: $accent-dark !default;
 $success-color: #28a745 !default;
 $warning-color: #ffc107 !default;
 $danger-color: #dc3545 !default;

@@ -1,6 +1,7 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import logo from '/assets/logo.png';
+import ThemeToggle from './ThemeToggle';
 
 function Navigation() {
     const location = useLocation()
@@ -71,6 +72,9 @@ function Navigation() {
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>
+                    <div className="d-flex align-items-center">
+                        <ThemeToggle />
+                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

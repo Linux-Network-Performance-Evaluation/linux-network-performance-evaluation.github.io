@@ -15,6 +15,126 @@ body {
   background-color: $background-color;
   scroll-behavior: smooth;
   scroll-padding-top: 120px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add smooth transitions for theme switching */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+  body {
+    background-color: $dark-background-color;
+    color: $dark-text-color;
+  }
+  
+  .content-section {
+    background: rgba(33, 38, 45, 0.95);
+    border: 1px solid rgba(96, 160, 177, 0.2);
+  }
+  
+  .navbar {
+    background: rgba(13, 17, 23, 0.98) !important;
+    border-bottom: 1px solid rgba(96, 160, 177, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar-brand {
+    color: #ffffff !important;
+    font-weight: 700;
+    
+    &:hover {
+      color: $accent-primary !important;
+    }
+  }
+  
+  .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    
+    &:hover {
+      color: $accent-primary !important;
+      background-color: rgba(96, 160, 177, 0.15);
+    }
+    
+    &.active {
+      color: white !important;
+      background: linear-gradient(135deg, $accent-primary, $accent-dark);
+    }
+  }
+  
+  footer {
+    background-color: #0d1117 !important;
+    border-top: 2px solid rgba(96, 160, 177, 0.3) !important;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* Ensure footer is dark with higher specificity */
+  body footer {
+    background-color: #0d1117 !important;
+  }
+  
+  .text-muted {
+    color: rgba(239, 252, 255, 0.9) !important;
+    font-weight: 500;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-text-color;
+  }
+  
+  .card {
+    background-color: $dark-card-color !important;
+    border: 1px solid rgba(96, 160, 177, 0.3) !important;
+    color: $dark-text-color;
+    
+    &.bg-light {
+      background: linear-gradient(135deg, rgba(33, 38, 45, 0.9), rgba(22, 27, 34, 0.8)) !important;
+    }
+  }
+  
+  .card-title {
+    color: $accent-primary !important;
+  }
+  
+  .accent-bg {
+    background: linear-gradient(135deg, rgba(96, 160, 177, 0.15), rgba(33, 38, 45, 0.9));
+    border: 1px solid rgba(96, 160, 177, 0.3);
+  }
+  
+  header {
+    background: linear-gradient(135deg, rgba(96, 160, 177, 0.9) 0%, rgba(25, 83, 98, 0.9) 100%);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28239, 252, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  .btn {
+    background-color: $accent-primary;
+    border-color: $accent-primary;
+    color: $dark-background-color;
+    
+    &:hover {
+      background-color: transparent;
+      color: $accent-primary;
+      border-color: $accent-primary;
+    }
+  }
+  
+  .team-member {
+    background: linear-gradient(135deg, rgba(96, 160, 177, 0.8), rgba(25, 83, 98, 0.8));
+  }
+  
+  a {
+    color: $accent-primary;
+    
+    &:hover {
+      color: $accent-light;
+    }
+  }
 }
 
 .app-container {
@@ -79,7 +199,7 @@ h2 {
   color: $text-color;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  border-bottom: 2px solid $primary-color;
+  border-bottom: 2px solid $accent-primary;
   padding-bottom: 0.5rem;
 }
 
@@ -305,4 +425,108 @@ a {
 .py-4 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+/* Card enhancements with accent colors */
+.card {
+  border: 1px solid rgba(96, 160, 177, 0.2) !important;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-color: $accent-primary !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(96, 160, 177, 0.15);
+  }
+  
+  &.bg-light {
+    background: linear-gradient(135deg, $accent-light, rgba(255, 255, 255, 0.9)) !important;
+  }
+}
+
+.card-title {
+  color: $accent-dark !important;
+}
+
+/* Accent highlights */
+.accent-border {
+  border-left: 4px solid $accent-primary;
+  padding-left: 1rem;
+}
+
+.accent-bg {
+  background: linear-gradient(135deg, rgba(96, 160, 177, 0.1), rgba(239, 252, 255, 0.8));
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(96, 160, 177, 0.2);
+}
+
+/* Link styling with accent colors */
+a {
+  color: $accent-primary;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $accent-dark;
+    text-decoration: underline;
+  }
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: none;
+  border: 2px solid $accent-primary;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: $accent-primary;
+  margin-left: 1rem;
+  flex-shrink: 0;
+  
+  &:hover {
+    background-color: $accent-primary;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(96, 160, 177, 0.3);
+  }
+  
+  svg {
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover svg {
+    transform: rotate(15deg);
+  }
+}
+
+/* Responsive theme toggle */
+@media (max-width: 991px) {
+  .theme-toggle {
+    margin: 1rem 0 0 0;
+    align-self: flex-start;
+  }
+}
+
+[data-theme="dark"] {
+  .theme-toggle {
+    border-color: $accent-light;
+    color: $accent-light;
+    
+    &:hover {
+      background-color: $accent-light;
+      color: $dark-background-color;
+    }
+    
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(239, 252, 255, 0.3);
+    }
+  }
 }
