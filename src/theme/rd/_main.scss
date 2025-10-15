@@ -471,6 +471,230 @@ a {
   }
 }
 
+/* Excel-like data table styling */
+.data-table {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem; /* Increased from 0.8rem */
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 0;
+  width: 100%;
+  table-layout: fixed; /* Fixed layout for consistent sizing */
+  
+  th {
+    background-color: $accent-dark !important;
+    color: white !important;
+    font-weight: 600;
+    padding: 0.6rem 0.4rem; /* Increased padding */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    font-size: 0.85rem; /* Increased from 0.75rem */
+    width: 14.28%; /* Equal width columns (100% / 7 columns) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    &:first-child {
+      border-left: 2px solid $accent-primary !important;
+    }
+    
+    &:last-child {
+      border-right: 2px solid $accent-primary !important;
+    }
+    
+    &.udp-header {
+      background-color: #e67e22 !important; /* Orange background for UDP */
+      color: white !important;
+    }
+    
+    small {
+      font-size: 0.75rem; /* Increased from 0.65rem */
+      display: block;
+      line-height: 1.2;
+      white-space: normal;
+    }
+  }
+  
+  td {
+    padding: 0.5rem 0.4rem; /* Increased padding */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed from Courier New for better readability */
+    transition: background-color 0.2s ease;
+    font-size: 0.85rem; /* Increased from 0.75rem */
+    font-weight: 500; /* Added font weight for better readability */
+    width: 14.28%; /* Equal width columns */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    &:first-child {
+      background-color: rgba(96, 160, 177, 0.1) !important;
+      font-weight: 700; /* Increased weight for packet size column */
+      border-left: 2px solid $accent-primary;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    &:last-child {
+      border-right: 2px solid $accent-primary;
+    }
+    
+    &.udp-cell {
+      background-color: rgba(230, 126, 34, 0.1) !important; /* Light orange background for UDP cells */
+    }
+  }
+  
+  tr:hover td {
+    background-color: rgba(96, 160, 177, 0.15) !important;
+    
+    &.udp-cell {
+      background-color: rgba(230, 126, 34, 0.2) !important; /* Darker orange on hover for UDP */
+    }
+  }
+  
+  tr:nth-child(even) td {
+    background-color: rgba(239, 252, 255, 0.5);
+    
+    &.udp-cell {
+      background-color: rgba(230, 126, 34, 0.08) !important; /* Even lighter orange for even rows */
+    }
+  }
+  
+  tr:nth-child(even):hover td {
+    background-color: rgba(96, 160, 177, 0.2) !important;
+    
+    &.udp-cell {
+      background-color: rgba(230, 126, 34, 0.25) !important; /* Orange hover for even rows */
+    }
+  }
+}
+
+/* Container for consistent spacing without breaking layout */
+.table-container {
+  position: relative;
+  width: 100%;
+  min-height: 450px; /* Ensure consistent minimum height for all tabs */
+  overflow: hidden; /* Prevent table from breaking out */
+}
+
+/* Ensure table responsive container works with fixed layout */
+.table-responsive {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Smooth transitions between tabs */
+.tab-content {
+  min-height: 500px;
+}
+
+/* Dark mode table styling */
+[data-theme="dark"] {
+  .data-table {
+    th {
+      background-color: $accent-primary !important;
+      color: $dark-background-color !important;
+      font-size: 0.85rem; /* Match light mode size */
+      
+      &.udp-header {
+        background-color: #b7651d !important; /* Darker orange tone for better readability */
+        color: white !important; /* White text on dark orange background */
+      }
+      
+      small {
+        font-size: 0.75rem; /* Match light mode size */
+      }
+    }
+    
+    td {
+      background-color: rgba(33, 38, 45, 0.9) !important;
+      color: $dark-text-color;
+      border-color: rgba(96, 160, 177, 0.2);
+      font-size: 0.85rem; /* Match light mode size */
+      font-weight: 500; /* Match light mode weight */
+      
+      &:first-child {
+        background-color: rgba(96, 160, 177, 0.2) !important;
+        font-weight: 700; /* Match light mode weight */
+      }
+      
+      &.udp-cell {
+        background-color: rgba(214, 137, 16, 0.15) !important; /* Orange tint for UDP cells in dark mode */
+      }
+    }
+    
+    tr:hover td {
+      background-color: rgba(96, 160, 177, 0.25) !important;
+      
+      &.udp-cell {
+        background-color: rgba(214, 137, 16, 0.25) !important; /* Orange hover for UDP in dark mode */
+      }
+    }
+    
+    tr:nth-child(even) td {
+      background-color: rgba(22, 27, 34, 0.9) !important;
+      
+      &.udp-cell {
+        background-color: rgba(214, 137, 16, 0.1) !important; /* Subtle orange for even rows in dark mode */
+      }
+    }
+    
+    tr:nth-child(even):hover td {
+      background-color: rgba(96, 160, 177, 0.3) !important;
+      
+      &.udp-cell {
+        background-color: rgba(214, 137, 16, 0.3) !important; /* Orange hover for even rows in dark mode */
+      }
+    }
+  }
+}
+
+/* Tab styling improvements */
+.nav-tabs {
+  border-bottom: 2px solid $accent-primary;
+  
+  .nav-link {
+    border: none;
+    color: $accent-dark;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    margin-right: 0.25rem;
+    background-color: transparent;
+    
+    &:hover {
+      color: $accent-primary;
+      background-color: rgba(96, 160, 177, 0.1);
+      border: none;
+    }
+    
+    &.active {
+      color: white !important;
+      background-color: $accent-primary !important;
+      border: none !important;
+      border-bottom: 2px solid $accent-primary !important;
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .nav-tabs {
+    border-bottom-color: $accent-primary;
+    
+    .nav-link {
+      color: $dark-text-color;
+      
+      &:hover {
+        color: $accent-primary;
+        background-color: rgba(96, 160, 177, 0.15);
+      }
+      
+      &.active {
+        color: $dark-background-color !important;
+        background-color: $accent-primary !important;
+      }
+    }
+  }
+}
+
 /* Theme toggle button */
 .theme-toggle {
   background: none;
