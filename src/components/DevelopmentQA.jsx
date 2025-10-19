@@ -7,12 +7,16 @@ import {
   Table,
   Tabs,
   Tab,
+  Modal,
+  Button,
 } from "react-bootstrap";
 import { useState } from "react";
 import { DocumentCard } from "./DocumentViewer";
 
 function DevelopmentQA() {
   const [activeKey, setActiveKey] = useState("ipv4");
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [currentImage, setCurrentImage] = useState({ src: '', title: '' });
 
   const technologies = [
     "Linux (Fedora, Ubuntu, Kali)",
@@ -360,6 +364,12 @@ function DevelopmentQA() {
     }
   };
 
+  // Function to handle image clicks
+  const handleImageClick = (imageSrc, imageTitle) => {
+    setCurrentImage({ src: imageSrc, title: imageTitle });
+    setShowImageModal(true);
+  };
+
   const renderDataTable = (datasets, title) => {
     return (
       <div>
@@ -577,6 +587,295 @@ function DevelopmentQA() {
                   <Card className="shadow-sm">
                     <Card.Body>
                       {renderDataTable(ipv6_datasets, "IPv6")}
+                    </Card.Body>
+                  </Card>
+                </Tab>
+                <Tab eventKey="visualizations" title="Data Visualizations">
+                  <Card className="shadow-sm">
+                    <Card.Body>
+                      <h3 className="mb-4">Performance Comparison Graphs</h3>
+                      <p className="mb-4">
+                        Visual representations of network performance data showing comparative analysis 
+                        across different Linux distributions and protocol versions.
+                      </p>
+                      
+                      <Tabs defaultActiveKey="ipv4-comparison" id="graph-tabs" className="mb-4">
+                        <Tab eventKey="ipv4-comparison" title="IPv4 Analysis">
+                          <h4 className="mb-3">IPv4 Performance Comparisons</h4>
+                          <Row>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Delay Comparison</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png"
+                                    alt="IPv4 Delay Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png',
+                                      'IPv4 Delay Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Jitter Comparison</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png"
+                                    alt="IPv4 Jitter Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png',
+                                      'IPv4 Jitter Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Throughput Comparison</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png"
+                                    alt="IPv4 Throughput Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png',
+                                      'IPv4 Throughput Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Packet Loss Comparison</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png"
+                                    alt="IPv4 Packet Loss Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png',
+                                      'IPv4 Packet Loss Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                          </Row>
+                        </Tab>
+
+                        <Tab eventKey="ipv6-comparison" title="IPv6 Analysis">
+                          <h4 className="mb-3">IPv6 Performance Comparisons</h4>
+                          <Row>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Delay Comparison</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png"
+                                    alt="IPv6 Delay Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png',
+                                      'IPv6 Delay Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Jitter Comparison</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png"
+                                    alt="IPv6 Jitter Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png',
+                                      'IPv6 Jitter Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Throughput Comparison</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png"
+                                    alt="IPv6 Throughput Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png',
+                                      'IPv6 Throughput Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Packet Loss Comparison</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png"
+                                    alt="IPv6 Packet Loss Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png',
+                                      'IPv6 Packet Loss Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                          </Row>
+                        </Tab>
+
+                        <Tab eventKey="protocol-comparison" title="IPv4 vs IPv6">
+                          <h4 className="mb-3">IPv4 vs IPv6 Protocol Comparisons</h4>
+                          <Row>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Delay: IPv4 vs IPv6</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png"
+                                    alt="IPv4 vs IPv6 Delay Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png',
+                                      'IPv4 vs IPv6 Delay Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Jitter: IPv4 vs IPv6</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png"
+                                    alt="IPv4 vs IPv6 Jitter Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png',
+                                      'IPv4 vs IPv6 Jitter Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Throughput: IPv4 vs IPv6</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png"
+                                    alt="IPv4 vs IPv6 Throughput Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png',
+                                      'IPv4 vs IPv6 Throughput Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                            <Col md={6} className="mb-4">
+                              <Card className="h-100">
+                                <Card.Header>
+                                  <h6 className="mb-0">Packet Loss: IPv4 vs IPv6</h6>
+                                </Card.Header>
+                                <Card.Body className="text-center">
+                                  <img 
+                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png"
+                                    alt="IPv4 vs IPv6 Packet Loss Comparison"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '400px', cursor: 'pointer' }}
+                                    onClick={() => handleImageClick(
+                                      '/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png',
+                                      'IPv4 vs IPv6 Packet Loss Comparison'
+                                    )}
+                                  />
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                          </Row>
+                        </Tab>
+
+                        <Tab eventKey="python-scripts" title="Analysis Scripts">
+                          <h4 className="mb-3">Data Analysis Scripts</h4>
+                          <p className="mb-4">
+                            Python scripts used to generate the performance comparison graphs and statistical analysis.
+                          </p>
+                          <Row>
+                            <Col md={4} className="mb-3">
+                              <DocumentCard
+                                title="IPv4 Graphing Script"
+                                description="Python script for generating IPv4 performance comparison graphs and statistical visualizations."
+                                documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_ipv4.py"
+                              />
+                            </Col>
+                            <Col md={4} className="mb-3">
+                              <DocumentCard
+                                title="IPv6 Graphing Script"
+                                description="Python script for generating IPv6 performance comparison graphs and data visualizations."
+                                documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_ipv6.py"
+                              />
+                            </Col>
+                            <Col md={4} className="mb-3">
+                              <DocumentCard
+                                title="IPv4 vs IPv6 Comparison Script"
+                                description="Python script for generating comparative analysis graphs between IPv4 and IPv6 protocols."
+                                documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_compare_ipv4_ipv6.py"
+                              />
+                            </Col>
+                          </Row>
+                        </Tab>
+                      </Tabs>
                     </Card.Body>
                   </Card>
                 </Tab>
@@ -817,6 +1116,36 @@ function DevelopmentQA() {
           </Row>
         </section>
       </Container>
+
+      {/* Image Modal for zooming */}
+      <Modal show={showImageModal} onHide={() => setShowImageModal(false)} size="xl" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{currentImage.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ padding: '20px' }}>
+          <div className="text-center">
+            <img 
+              src={currentImage.src}
+              alt={currentImage.title}
+              className="img-fluid"
+              style={{ maxWidth: '100%', height: 'auto', maxHeight: '70vh' }}
+            />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowImageModal(false)}>
+            Close
+          </Button>
+          <Button 
+            variant="primary" 
+            href={currentImage.src}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open in New Tab
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </main>
   );
 }
