@@ -1,13 +1,25 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 import logo from '/assets/logo.png';
 import ThemeToggle from './ThemeToggle';
 
 function Navigation() {
-    const location = useLocation()
+    const location = useLocation();
+    const [expanded, setExpanded] = useState(false);
+
+    const handleNavClick = () => {
+        setExpanded(false);
+    };
 
     return (
-        <Navbar expand="lg" className="fixed-top" variant="light">
+        <Navbar 
+            expand="lg" 
+            className="fixed-top" 
+            variant="light" 
+            expanded={expanded}
+            onToggle={setExpanded}
+        >
             <Container>
                 <Navbar.Brand as={Link} to="/">
                     <img src={logo} alt="Network Performance Evaluation Logo" />
@@ -22,6 +34,7 @@ function Navigation() {
                                 as={Link} 
                                 to="/" 
                                 className={location.pathname === '/' ? 'active' : ''}
+                                onClick={handleNavClick}
                             >
                                 About
                             </Nav.Link>
@@ -31,6 +44,7 @@ function Navigation() {
                                 as={Link} 
                                 to="/research-upskilling" 
                                 className={location.pathname === '/research-upskilling' ? 'active' : ''}
+                                onClick={handleNavClick}
                             >
                                 Research & Upskilling
                             </Nav.Link>
@@ -40,6 +54,7 @@ function Navigation() {
                                 as={Link} 
                                 to="/planning-control" 
                                 className={location.pathname === '/planning-control' ? 'active' : ''}
+                                onClick={handleNavClick}
                             >
                                 Planning & Control
                             </Nav.Link>
@@ -49,6 +64,7 @@ function Navigation() {
                                 as={Link} 
                                 to="/communication-teamwork" 
                                 className={location.pathname === '/communication-teamwork' ? 'active' : ''}
+                                onClick={handleNavClick}
                             >
                                 Communication & Teamwork
                             </Nav.Link>
@@ -58,6 +74,7 @@ function Navigation() {
                                 as={Link} 
                                 to="/development-qa" 
                                 className={location.pathname === '/development-qa' ? 'active' : ''}
+                                onClick={handleNavClick}
                             >
                                 Development & QA
                             </Nav.Link>
@@ -67,6 +84,7 @@ function Navigation() {
                                 as={Link} 
                                 to="/poster" 
                                 className={location.pathname === '/poster' ? 'active' : ''}
+                                onClick={handleNavClick}
                             >
                                 Poster
                             </Nav.Link>
