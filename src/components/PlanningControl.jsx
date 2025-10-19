@@ -74,26 +74,11 @@ function PlanningControl() {
                 <Tab eventKey="timeline" title="Project Timeline">
                   <Row>
                     <Col md={6} className="mb-3">
-                      <Card className="h-100">
-                        <Card.Body>
-                          <Card.Title>Gantt Chart v3 (MS Project)</Card.Title>
-                          <Card.Text>
-                            Comprehensive project timeline with milestones,
-                            dependencies, and resource allocation.
-                          </Card.Text>
-                          <a
-                            href="/Portfolio/02-Planning-and-Control/Proposal/Planning-Documents/Current/09. Gantt Chart v3.mpp"
-                            className="btn btn-primary"
-                            download
-                          >
-                            Download (.mpp)
-                          </a>
-                          <small className="text-muted d-block mt-2">
-                            Note: MS Project files require Microsoft Project to
-                            view
-                          </small>
-                        </Card.Body>
-                      </Card>
+                      <DocumentCard
+                        title="Gantt Chart v3 (MS Project)"
+                        description="Comprehensive project timeline with milestones, dependencies, and resource allocation."
+                        documentPath="/Portfolio/02-Planning-and-Control/Proposal/Planning-Documents/Current/09. Gantt Chart v3.mpp"
+                      />
                     </Col>
                     <Col md={6} className="mb-3">
                       <DocumentCard

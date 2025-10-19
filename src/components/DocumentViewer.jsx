@@ -1,4 +1,4 @@
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Badge } from "react-bootstrap";
 import { useState } from "react";
 
 // Document Card Component for consistent styling
@@ -67,6 +67,8 @@ export function DocumentCard({
       case "xlsx":
       case "xls":
         return "excel";
+      case "mpp":
+        return "msproject";
       case "png":
       case "jpg":
       case "jpeg":
@@ -77,8 +79,43 @@ export function DocumentCard({
     }
   };
 
+  const getFileTypeDisplay = (docType, path) => {
+    const extension = path.split(".").pop().toUpperCase();
+    switch (docType) {
+      case "pdf":
+        return `PDF (${extension})`;
+      case "word":
+        return `Word Document (${extension})`;
+      case "powerpoint":
+        return `PowerPoint (${extension})`;
+      case "excel":
+        return `Excel Spreadsheet (${extension})`;
+      case "msproject":
+        return `MS Project File (${extension})`;
+      case "image":
+        return `Image (${extension})`;
+      default:
+        return `File (${extension})`;
+    }
+  };
+
+  const getSpecialNote = (docType) => {
+    switch (docType) {
+      case "msproject":
+        return "Note: MS Project files require Microsoft Project to view";
+      case "word":
+      case "powerpoint":
+      case "excel":
+        return "This file type requires download to view";
+      default:
+        return null;
+    }
+  };
+
   const docType = documentType || getDocumentType(documentPath);
   const canViewInline = docType === "pdf"; // Only PDFs can be viewed inline
+  const fileTypeDisplay = getFileTypeDisplay(docType, documentPath);
+  const specialNote = getSpecialNote(docType);
 
   // Document viewer modal component
   const ViewerModal = () => (
@@ -133,10 +170,18 @@ export function DocumentCard({
 
   return (
     <>
-      <div className={`card h-100 ${className}`}>
+      <div className={`card h-100 ${className}`} style={{ minHeight: "250px" }}>
         <div className="card-body d-flex flex-column">
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text flex-grow-1">{description}</p>
+          <div className="d-flex justify-content-between align-items-start mb-2">
+            <h5 className="card-title mb-0">{title}</h5>
+            <Badge bg="secondary" className="ms-2 flex-shrink-0">
+              {fileTypeDisplay}
+            </Badge>
+          </div>
+          <div className="flex-grow-1">
+            <p className="card-text">{description}</p>
+            {specialNote && <small className="text-muted">{specialNote}</small>}
+          </div>
           <div className="mt-auto">
             <div className="d-flex gap-2 align-items-center">
               {canViewInline && (
@@ -147,7 +192,7 @@ export function DocumentCard({
                   }
                   className="flex-shrink-0"
                 >
-                  View Inline
+                  View
                 </Button>
               )}
               <Button
@@ -160,11 +205,6 @@ export function DocumentCard({
                 Download
               </Button>
             </div>
-            {!canViewInline && docType !== "image" && (
-              <small className="text-muted d-block mt-2">
-                This file type requires download to view
-              </small>
-            )}
           </div>
         </div>
       </div>
