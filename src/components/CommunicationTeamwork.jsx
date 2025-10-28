@@ -114,7 +114,8 @@ function CommunicationTeamwork() {
             <Tab eventKey="team-meetings" title="Team Meetings">
               <h2>Team Meeting Minutes</h2>
               <p>
-                Comprehensive record of all team meetings showing collaborative work, decision-making processes, and progress tracking.
+                Comprehensive record of all team meetings showing collaborative
+                work, decision-making processes, and progress tracking.
               </p>
 
               <h4>Recent Team Meetings</h4>
@@ -206,7 +207,8 @@ function CommunicationTeamwork() {
             <Tab eventKey="client-meetings" title="Client Meetings">
               <h2>Client & Mentor Meeting Minutes</h2>
               <p>
-                Records of all stakeholder meetings including client consultations and mentor guidance sessions.
+                Records of all stakeholder meetings including client
+                consultations and mentor guidance sessions.
               </p>
 
               <h4>Recent Client Meetings</h4>
@@ -284,7 +286,8 @@ function CommunicationTeamwork() {
             <Tab eventKey="logbooks" title="Individual Logbooks">
               <h2>Team Member Logbooks</h2>
               <p>
-                Individual contribution records showing personal work, learning, and project involvement for each team member.
+                Individual contribution records showing personal work, learning,
+                and project involvement for each team member.
               </p>
 
               <Row className="mb-4">
@@ -336,7 +339,8 @@ function CommunicationTeamwork() {
             <Tab eventKey="evidence" title="Team Evidence">
               <h2>Individual Contribution Evidence</h2>
               <p>
-                Specific work samples and evidence demonstrating individual team member contributions to the project.
+                Specific work samples and evidence demonstrating individual team
+                member contributions to the project.
               </p>
 
               <h4>Thomas - Technical Implementation</h4>

@@ -187,13 +187,17 @@ function PlanningControl() {
             <Col>
               <h2>Version History & Evolution</h2>
               <p>
-                Track the evolution of our project documentation through version control and iterative improvements:
+                Track the evolution of our project documentation through version
+                control and iterative improvements:
               </p>
 
               <Tabs defaultActiveKey="proposal-versions" className="mb-3">
                 <Tab eventKey="proposal-versions" title="Proposal Evolution">
                   <h4>Document Evolution (v0.1 → v2.4)</h4>
-                  <p>Our proposal went through 24 iterations, showing continuous refinement based on feedback:</p>
+                  <p>
+                    Our proposal went through 24 iterations, showing continuous
+                    refinement based on feedback:
+                  </p>
                   <Row>
                     <Col md={4} className="mb-3">
                       <DocumentCard
@@ -219,9 +223,14 @@ function PlanningControl() {
                   </Row>
                 </Tab>
 
-                <Tab eventKey="planning-evolution" title="Planning Document Versions">
+                <Tab
+                  eventKey="planning-evolution"
+                  title="Planning Document Versions"
+                >
                   <h4>Planning Document Evolution</h4>
-                  <p>Shows the iterative improvement of our planning documents:</p>
+                  <p>
+                    Shows the iterative improvement of our planning documents:
+                  </p>
                   <Row>
                     <Col md={6} className="mb-3">
                       <DocumentCard
@@ -258,7 +267,9 @@ function PlanningControl() {
 
                 <Tab eventKey="status-versions" title="Status Report Versions">
                   <h4>Status Report Evolution</h4>
-                  <p>Track the progression of our status reporting over time:</p>
+                  <p>
+                    Track the progression of our status reporting over time:
+                  </p>
                   <Row>
                     <Col md={3} className="mb-3">
                       <DocumentCard

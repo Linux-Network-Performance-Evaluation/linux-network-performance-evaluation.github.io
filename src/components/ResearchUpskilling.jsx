@@ -77,7 +77,8 @@ function ResearchUpskilling() {
             <Tab eventKey="qemu" title="QEMU Virtualization">
               <h2>QEMU Setup Scripts</h2>
               <p>
-                Virtualization scripts for setting up testing environments across different platforms and Linux distributions.
+                Virtualization scripts for setting up testing environments
+                across different platforms and Linux distributions.
               </p>
 
               <Row className="mb-4">
