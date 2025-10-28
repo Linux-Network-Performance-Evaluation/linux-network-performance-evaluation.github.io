@@ -10,8 +10,8 @@ function FileStructure() {
               <h1 className="text-center mb-4">Complete File Structure</h1>
               <p className="text-center mb-5">
                 This document provides a comprehensive overview of the entire
-                file structure for the R&D Project Part 1, including all files
-                and directories.
+                file structure for the R&D Project, including all files and
+                directories.
               </p>
               <div className="text-center mb-4">
                 <small className="text-muted">
@@ -656,10 +656,9 @@ function FileStructure() {
               <h2>Summary</h2>
               <div className="file-structure-summary">
                 <p>
-                  This R&D Project Part 1 portfolio contains a comprehensive
-                  collection of documentation, testing files, configurations,
-                  and project management artifacts organized into four main
-                  categories:
+                  This R&D Project portfolio contains a comprehensive collection
+                  of documentation, testing files, configurations, and project
+                  management artifacts organized into four main categories:
                 </p>
                 <ol>
                   <li>
@@ -680,18 +679,9 @@ function FileStructure() {
                     analysis tools, and quality assurance checklists
                   </li>
                 </ol>
-                <p>
-                  The structure reflects a well-organized academic project with
-                  proper version control, comprehensive documentation, and
-                  systematic approach to both technical implementation and
-                  project management.
-                </p>
                 <div className="mt-3">
                   <strong>Total File Count:</strong> 840 files across all
                   directories and subdirectories.
-                </div>
-                <div className="mt-2">
-                  <em>Generated on October 28, 2025</em>
                 </div>
               </div>
             </Col>
