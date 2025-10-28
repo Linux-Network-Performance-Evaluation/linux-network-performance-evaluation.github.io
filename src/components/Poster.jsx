@@ -1,5 +1,4 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { DocumentCard } from "./DocumentViewer";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 function Poster() {
   return (
@@ -20,13 +19,13 @@ function Poster() {
             <Col lg={10} xl={8}>
               <div className="poster-container text-center">
                 <a
-                  href="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v2.png"
+                  href="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v3.png"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="d-inline-block"
                 >
                   <img
-                    src="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v2.png"
+                    src="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v3.png"
                     alt="Linux Network Performance Evaluation Research Poster"
                     className="poster img-fluid shadow-lg rounded"
                     style={{
