@@ -50,6 +50,36 @@ function Poster() {
             </Col>
           </Row>
         </section>
+
+        <section className="content-section">
+          <Row>
+            <Col>
+              <Card className="border-0 bg-light">
+                <Card.Body>
+                  <Card.Title className="h3">About This Poster</Card.Title>
+                  <Card.Text>
+                    This academic poster presents a comprehensive overview of
+                    our Linux Network Performance Evaluation project. It
+                    summarizes the key findings from our comparative analysis of
+                    network performance across Ubuntu, Fedora, and Kali Linux
+                    distributions, highlighting differences in latency,
+                    throughput, jitter, and packet loss between IPv4 and IPv6
+                    protocols.
+                  </Card.Text>
+                  <Card.Text>
+                    The poster was designed for presentation at academic
+                    conferences and serves as a visual summary of our research
+                    methodology, experimental setup, data analysis techniques,
+                    and significant findings. It demonstrates the practical
+                    applications of our research in network optimization and
+                    Linux distribution selection for performance-critical
+                    applications.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </section>
       </Container>
     </main>
   );

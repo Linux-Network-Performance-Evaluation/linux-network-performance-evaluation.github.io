@@ -1107,9 +1107,324 @@ function DevelopmentQA() {
                         documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Ubuntu_Fedora_Sample_Graphing.xlsx"
                       />
                     </Col>
+                    <Col md={6} className="mb-3">
+                      <DocumentCard
+                        title="Clean Data Python Script"
+                        description="Python script for data cleaning and preprocessing of network performance test results."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/clean_data.py"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={6} className="mb-3">
+                      <DocumentCard
+                        title="Excel Processing Script"
+                        description="Python script for automated Excel data processing and analysis generation."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/excel.py"
+                        documentType="code"
+                      />
+                    </Col>
+                  </Row>
+
+                  <h4>Generated Performance Graphs</h4>
+                  <p>
+                    Automatically generated comparative visualizations showing
+                    network performance differences across distributions and
+                    protocols.
+                  </p>
+                  <Row className="mb-4">
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="IPv4 vs IPv6 Delay Comparison"
+                        description="Comparative graph showing delay performance differences between IPv4 and IPv6 protocols."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png"
+                        documentType="image"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="IPv4 vs IPv6 Throughput Comparison"
+                        description="Throughput performance comparison between IPv4 and IPv6 across different packet sizes."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png"
+                        documentType="image"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="IPv4 Distribution Comparison"
+                        description="Performance comparison graphs for IPv4 across Ubuntu, Fedora, and Kali Linux distributions."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png"
+                        documentType="image"
+                      />
+                    </Col>
+                  </Row>
+                </Tab>
+
+                <Tab eventKey="configurations" title="System Configurations">
+                  <h3>Network Configuration Files</h3>
+                  <p>
+                    Complete system and network configuration files for all
+                    testing environments including time synchronization, network
+                    interfaces, and device rules.
+                  </p>
+
+                  <h4>Ubuntu Configuration</h4>
+                  <Row className="mb-4">
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Ubuntu Sender Configuration"
+                        description="Complete configuration setup for Ubuntu sender PC including network and automation scripts."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc1/home/sender/config_files.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Ubuntu Receiver Log Export"
+                        description="Automated log export script for Ubuntu receiver configuration."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc2/home/receiver/export_logs.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Ubuntu Chrony Configuration"
+                        description="Time synchronization configuration for Ubuntu testing environment."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc1/etc/chrony/chrony.conf"
+                        documentType="config"
+                      />
+                    </Col>
+                  </Row>
+
+                  <h4>Fedora Configuration</h4>
+                  <Row className="mb-4">
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Fedora Sender Scripts"
+                        description="Network testing scripts for Fedora sender configuration including IPv4 and IPv6 testing."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/home/sender/ipv4.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Fedora Network Configuration"
+                        description="Netplan configuration for Fedora testing environment network setup."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/etc/netplan/99-netplan.yaml"
+                        documentType="config"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Fedora USB Device Rules"
+                        description="USB device configuration rules for consistent network interface naming."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/etc/udev/rules.d/70-persistent-usb-tether.rules"
+                        documentType="config"
+                      />
+                    </Col>
+                  </Row>
+
+                  <h4>Kali Linux Configuration</h4>
+                  <Row className="mb-4">
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Kali Sender Configuration"
+                        description="Complete Kali Linux sender configuration including testing scripts and network setup."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/pc1/home/sender/config_files.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Kali Router Configuration"
+                        description="Router configuration files for Kali Linux testing environment."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/router1/etc/chrony/chrony.conf"
+                        documentType="config"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Kali Network Interface Rules"
+                        description="Network interface configuration and device rules for Kali Linux environment."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/pc2/etc/netplan/99-netplan.yaml"
+                        documentType="config"
+                      />
+                    </Col>
+                  </Row>
+                </Tab>
+
+                <Tab eventKey="packages" title="Package Management">
+                  <h3>Automated Package Installation</h3>
+                  <p>
+                    Automated scripts for package installation and environment
+                    setup across different Linux distributions to ensure
+                    consistent testing environments.
+                  </p>
+
+                  <Row className="mb-4">
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Ubuntu Package Installer"
+                        description="Automated script for installing all required packages and dependencies for Ubuntu testing environment."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Ubuntu/download_ubuntu_packages.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Fedora Package Installer"
+                        description="Comprehensive package installation script for setting up Fedora testing environment with all required tools."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Fedora/download_fedora_packages.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Kali Package Installer"
+                        description="Specialized package installation script for Kali Linux including security and networking tools required for testing."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Kali/download_kali_packages.sh"
+                        documentType="code"
+                      />
+                    </Col>
                   </Row>
                 </Tab>
               </Tabs>
+            </Col>
+          </Row>
+        </section>
+
+        <section className="content-section">
+          <Row>
+            <Col>
+              <h2>Project Poster</h2>
+              <p>
+                Academic poster presentation summarizing the project
+                methodology, findings, and outcomes for conference presentation
+                and project showcase.
+              </p>
+
+              <Row className="mb-4">
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Project Poster v2"
+                    description="Final version of the academic poster presenting project methodology, results, and conclusions."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v2.png"
+                    documentType="image"
+                  />
+                </Col>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Project Poster v1"
+                    description="Initial version of the project poster showing early design and content organization."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v1.png"
+                    documentType="image"
+                  />
+                </Col>
+              </Row>
+
+              <h3>Poster Content Sections</h3>
+              <p>
+                Individual sections that comprise the complete poster
+                presentation, detailing different aspects of the project.
+              </p>
+
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Background"
+                    description="Project background and context setting the foundation for the network performance evaluation study."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/01 Background.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Rationale"
+                    description="Justification and reasoning behind the project approach and methodology selection."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/02 Rationale.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Objectives"
+                    description="Clear project objectives and goals defining the scope and expected outcomes."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/03 Objectives.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Project Impact"
+                    description="Analysis of project impact and significance within the field of network performance evaluation."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/04 Project Impact.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Goals"
+                    description="Specific project goals and measurable outcomes targeted for achievement."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/05 Goals.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Project Management Methodology"
+                    description="Description of project management approach and methodologies employed throughout the project lifecycle."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/06 Project Management Methodology.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Artefacts"
+                    description="Overview of key project deliverables and artifacts produced during the development process."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/07 Artefacts.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Quality Assurance"
+                    description="Quality assurance processes and procedures ensuring project reliability and accuracy."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/08 Quality Assurance.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Key Challenges"
+                    description="Identification and analysis of major challenges encountered during project execution."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/09 Key Challenges.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Lessons Learnt"
+                    description="Key insights and lessons learned throughout the project development and testing phases."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/10 Lessons Learnt.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="References"
+                    description="Academic references and sources supporting the project methodology and findings."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/11 References.docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Acknowledgements"
+                    description="Recognition of contributors, supporters, and resources that facilitated project completion."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/12 Acknowledgements.docx"
+                  />
+                </Col>
+              </Row>
+
+              <h3>Supporting Materials</h3>
+              <Row className="mb-4">
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="QR Code"
+                    description="QR code linking to digital project resources and portfolio website for easy access."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/qr_code.svg"
+                    documentType="image"
+                  />
+                </Col>
+              </Row>
             </Col>
           </Row>
         </section>
@@ -1190,6 +1505,28 @@ function DevelopmentQA() {
                         title="Kali Router Configuration"
                         description="Specialized configuration checklist for Kali Linux router setup and network interface management."
                         documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Router Configuration Checklist - Kali v1.0.pdf"
+                      />
+                    </Col>
+                  </Row>
+
+                  <h4>Version History</h4>
+                  <Row className="mb-4">
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Ubuntu Router Config v1.0"
+                        description="Initial version of Ubuntu router configuration checklist showing the evolution of QA processes."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Version-History/Router Configuration Checklist - Ubuntu v1.0.pdf"
+                      />
+                    </Col>
+                  </Row>
+
+                  <h4>Peer Review Version History</h4>
+                  <Row className="mb-4">
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Ubuntu Peer Review v1.0"
+                        description="Initial version of Ubuntu configuration peer review checklist showing QA process development."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Version-History/Peer Review Checklist - Ubuntu Configuration v1.0.pdf"
                       />
                     </Col>
                   </Row>

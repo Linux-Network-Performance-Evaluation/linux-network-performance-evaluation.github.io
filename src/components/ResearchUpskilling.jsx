@@ -73,6 +73,75 @@ function ResearchUpskilling() {
                 </Col>
               </Row>
             </Tab>
+
+            <Tab eventKey="qemu" title="QEMU Virtualization">
+              <h2>QEMU Setup Scripts</h2>
+              <p>
+                Virtualization scripts for setting up testing environments across different platforms and Linux distributions.
+              </p>
+
+              <Row className="mb-4">
+                <Col md={12} className="mb-3">
+                  <h4>macOS QEMU Scripts</h4>
+                  <Row>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Fedora Setup Script (macOS)"
+                        description="QEMU script for setting up Fedora testing environment on macOS systems."
+                        documentPath="/Portfolio/01-Research-and-Upskilling/Upskilling/QEMU/macOS/fedora.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Kali Setup Script (macOS)"
+                        description="QEMU script for setting up Kali Linux testing environment on macOS systems."
+                        documentPath="/Portfolio/01-Research-and-Upskilling/Upskilling/QEMU/macOS/kali.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Ubuntu Setup Script (macOS)"
+                        description="QEMU script for setting up Ubuntu testing environment on macOS systems."
+                        documentPath="/Portfolio/01-Research-and-Upskilling/Upskilling/QEMU/macOS/ubuntu.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                  </Row>
+                </Col>
+
+                <Col md={12} className="mb-3">
+                  <h4>Windows/Linux QEMU Scripts</h4>
+                  <Row>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Fedora Setup Script (Windows/Linux)"
+                        description="QEMU script for setting up Fedora testing environment on Windows or Linux host systems."
+                        documentPath="/Portfolio/01-Research-and-Upskilling/Upskilling/QEMU/Windows-Linux/fedora.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Kali Setup Script (Windows/Linux)"
+                        description="QEMU script for setting up Kali Linux testing environment on Windows or Linux host systems."
+                        documentPath="/Portfolio/01-Research-and-Upskilling/Upskilling/QEMU/Windows-Linux/kali.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Ubuntu Setup Script (Windows/Linux)"
+                        description="QEMU script for setting up Ubuntu testing environment on Windows or Linux host systems."
+                        documentPath="/Portfolio/01-Research-and-Upskilling/Upskilling/QEMU/Windows-Linux/ubuntu.sh"
+                        documentType="code"
+                      />
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Tab>
           </Tabs>
         </section>
 

@@ -185,6 +185,119 @@ function PlanningControl() {
         <section className="content-section">
           <Row>
             <Col>
+              <h2>Version History & Evolution</h2>
+              <p>
+                Track the evolution of our project documentation through version control and iterative improvements:
+              </p>
+
+              <Tabs defaultActiveKey="proposal-versions" className="mb-3">
+                <Tab eventKey="proposal-versions" title="Proposal Evolution">
+                  <h4>Document Evolution (v0.1 → v2.4)</h4>
+                  <p>Our proposal went through 24 iterations, showing continuous refinement based on feedback:</p>
+                  <Row>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Initial Proposal v0.1"
+                        description="The very first draft of our project proposal, showing our initial understanding and approach."
+                        documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Version-History/Proposal_v0.1.docx"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Proposal v1.0 (First Complete)"
+                        description="First complete version incorporating initial feedback and comprehensive project planning."
+                        documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Version-History/Proposal_v1.0.docx"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Proposal v2.2 Submission"
+                        description="PDF version submitted for formal review, representing a major milestone in development."
+                        documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Version-History/Proposal_v2.2_Submission.pdf"
+                      />
+                    </Col>
+                  </Row>
+                </Tab>
+
+                <Tab eventKey="planning-evolution" title="Planning Document Versions">
+                  <h4>Planning Document Evolution</h4>
+                  <p>Shows the iterative improvement of our planning documents:</p>
+                  <Row>
+                    <Col md={6} className="mb-3">
+                      <DocumentCard
+                        title="Initial Scope Statement v1"
+                        description="Original project scope definition from the initial proposal phase."
+                        documentPath="/Portfolio/02-Planning-and-Control/Proposal/Planning-Documents/Version-History/v1.0-Initial-Proposal/01. Scope Statement v1.docx"
+                      />
+                    </Col>
+                    <Col md={6} className="mb-3">
+                      <DocumentCard
+                        title="Stakeholder Register"
+                        description="Comprehensive identification of all project stakeholders and their roles."
+                        documentPath="/Portfolio/02-Planning-and-Control/Proposal/Planning-Documents/Version-History/v1.0-Initial-Proposal/02. Stakeholder Register.docx"
+                      />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={6} className="mb-3">
+                      <DocumentCard
+                        title="Project Charter"
+                        description="Formal project authorization document defining objectives, scope, and authority."
+                        documentPath="/Portfolio/02-Planning-and-Control/Proposal/Planning-Documents/Version-History/v1.0-Initial-Proposal/10. Project Charter.docx"
+                      />
+                    </Col>
+                    <Col md={6} className="mb-3">
+                      <DocumentCard
+                        title="Team Contract"
+                        description="Agreement outlining team member roles, responsibilities, and working agreements."
+                        documentPath="/Portfolio/02-Planning-and-Control/Proposal/Planning-Documents/Version-History/v1.0-Initial-Proposal/12. Team Contract.docx"
+                      />
+                    </Col>
+                  </Row>
+                </Tab>
+
+                <Tab eventKey="status-versions" title="Status Report Versions">
+                  <h4>Status Report Evolution</h4>
+                  <p>Track the progression of our status reporting over time:</p>
+                  <Row>
+                    <Col md={3} className="mb-3">
+                      <DocumentCard
+                        title="Status Report v1.0"
+                        description="Initial status report establishing baseline reporting format."
+                        documentPath="/Portfolio/02-Planning-and-Control/Mid-Term Review/Version-History/Status Report v1.0.docx"
+                      />
+                    </Col>
+                    <Col md={3} className="mb-3">
+                      <DocumentCard
+                        title="Status Report v1.1"
+                        description="Updated status report with improved formatting and additional metrics."
+                        documentPath="/Portfolio/02-Planning-and-Control/Mid-Term Review/Version-History/Status Report v1.1.docx"
+                      />
+                    </Col>
+                    <Col md={3} className="mb-3">
+                      <DocumentCard
+                        title="Status Report v1.2"
+                        description="Further refinements incorporating stakeholder feedback on reporting structure."
+                        documentPath="/Portfolio/02-Planning-and-Control/Mid-Term Review/Version-History/Status Report v1.2.docx"
+                      />
+                    </Col>
+                    <Col md={3} className="mb-3">
+                      <DocumentCard
+                        title="Status Report v1.3"
+                        description="Penultimate version with comprehensive progress tracking and forward planning."
+                        documentPath="/Portfolio/02-Planning-and-Control/Mid-Term Review/Version-History/Status Report v1.3.docx"
+                      />
+                    </Col>
+                  </Row>
+                </Tab>
+              </Tabs>
+            </Col>
+          </Row>
+        </section>
+
+        <section className="content-section">
+          <Row>
+            <Col>
               <h2>Project Management</h2>
               <p>
                 Our project follows established project management principles

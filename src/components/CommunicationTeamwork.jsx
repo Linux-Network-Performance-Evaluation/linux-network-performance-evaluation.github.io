@@ -60,43 +60,350 @@ function CommunicationTeamwork() {
         </section>
 
         <section className="content-section">
-          <Row>
-            <Col>
-              <h2>Collaborative Processes</h2>
+          <Tabs
+            defaultActiveKey="client-documents"
+            id="communication-tabs"
+            className="mb-4"
+          >
+            <Tab eventKey="client-documents" title="Client Documents">
+              <h2>Client Communication</h2>
               <p>
-                Our team implemented structured collaborative processes to
-                ensure efficient workflow and knowledge sharing throughout the
-                project lifecycle.
+                Official documentation and communication materials related to
+                client interactions and project agreements.
               </p>
 
-              <Row>
-                <Col lg={4} className="mb-3">
-                  <h4>Planning & Coordination</h4>
-                  <ul>
-                    <li>Task allocation and scheduling</li>
-                    <li>Resource sharing agreements</li>
-                    <li>Progress tracking mechanisms</li>
-                  </ul>
+              <Row className="mb-4">
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Client Contract"
+                    description="Official contract document outlining project scope, deliverables, timelines, and responsibilities."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Client Contract.docx"
+                  />
                 </Col>
-                <Col lg={4} className="mb-3">
-                  <h4>Knowledge Sharing</h4>
-                  <ul>
-                    <li>Technical documentation</li>
-                    <li>Best practices documentation</li>
-                    <li>Lessons learned sessions</li>
-                  </ul>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Client Feedback Form"
+                    description="Structured feedback form for collecting client input on project progress and deliverables."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Client Feedback Form.docx"
+                  />
                 </Col>
-                <Col lg={4} className="mb-3">
-                  <h4>Quality Assurance</h4>
-                  <ul>
-                    <li>Peer reviews and feedback</li>
-                    <li>Cross-team validation</li>
-                    <li>Continuous improvement processes</li>
-                  </ul>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Client Feedback Form (Signed)"
+                    description="Completed and signed client feedback form with official project evaluation."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Client Feedback Form_signed.pdf"
+                  />
+                </Col>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Group Details"
+                    description="Team composition, contact information, and role assignments for the project."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Group Details.xlsx"
+                  />
+                </Col>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Project Timetables"
+                    description="Detailed scheduling and timeline information for project milestones and activities."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Timetables.xlsx"
+                  />
                 </Col>
               </Row>
-            </Col>
-          </Row>
+            </Tab>
+
+            <Tab eventKey="team-meetings" title="Team Meetings">
+              <h2>Team Meeting Minutes</h2>
+              <p>
+                Comprehensive record of all team meetings showing collaborative work, decision-making processes, and progress tracking.
+              </p>
+
+              <h4>Recent Team Meetings</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Oct 28, 2025"
+                    description="Latest team meeting covering final project preparations and deliverable reviews."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-10-28 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Oct 27, 2025"
+                    description="Pre-final meeting discussing presentation preparation and last-minute adjustments."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-10-27 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Oct 16, 2025"
+                    description="Progress review meeting focusing on testing completion and data analysis."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-10-16 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Oct 15, 2025"
+                    description="Coordination meeting for final testing phases and documentation completion."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-10-15 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Oct 2, 2025"
+                    description="Monthly progress review and planning for final project phases."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-10-02 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Sep 25, 2025"
+                    description="Testing methodology finalization and resource allocation discussions."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-09-25 (Team).docx"
+                  />
+                </Col>
+              </Row>
+
+              <h4>Additional Team Meetings</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Sep 17, 2025"
+                    description="Technical review and data collection methodology discussion."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-09-17 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Aug 28, 2025"
+                    description="Mid-project milestone review and progress assessment."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-08-28 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Aug 14, 2025"
+                    description="Summer progress update and technical coordination."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-08-14 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Meeting - Jun 18, 2025"
+                    description="Mid-term project review and scope refinements."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-06-18 (Team).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team Kick-off Meeting"
+                    description="Initial team formation meeting establishing goals, roles, and project approach."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-03-18 (Team Kick-off).docx"
+                  />
+                </Col>
+              </Row>
+            </Tab>
+
+            <Tab eventKey="client-meetings" title="Client Meetings">
+              <h2>Client & Mentor Meeting Minutes</h2>
+              <p>
+                Records of all stakeholder meetings including client consultations and mentor guidance sessions.
+              </p>
+
+              <h4>Recent Client Meetings</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Client Meeting - Oct 18, 2025"
+                    description="Final client consultation before project completion and presentation."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Mentor-Client-Meetings/Meeting Minutes 2025-10-18 (Client).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Client Meeting - Oct 16, 2025"
+                    description="Progress review and final deliverable discussions with client."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Mentor-Client-Meetings/Meeting Minutes 2025-10-16 (Client).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Client Meeting - Oct 2, 2025"
+                    description="Monthly client check-in covering project progress and upcoming milestones."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Mentor-Client-Meetings/Meeting Minutes 2025-10-02 (Client).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Client Meeting - Sep 4, 2025"
+                    description="September progress review and testing phase planning."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Mentor-Client-Meetings/Meeting Minutes 2025-09-04 (Client).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Client Meeting - Aug 14, 2025"
+                    description="Mid-August progress update and methodology validation."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Mentor-Client-Meetings/Meeting Minutes 2025-08-14 (Client).docx"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Client Meeting - Jul 31, 2025"
+                    description="Summer progress review and technical approach validation."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Mentor-Client-Meetings/Meeting Minutes 2025-07-31 (Client).docx"
+                  />
+                </Col>
+              </Row>
+
+              <h4>Meeting Agendas</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Team-Client Kick-off Agenda"
+                    description="Structured agenda for initial project kick-off meeting with all stakeholders."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Agendas/Team-Client Kick-off Meeting Agenda.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Meeting Agenda - May 22, 2025"
+                    description="Mid-project review meeting agenda covering progress assessment and planning."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Agendas/Team-Client Meeting Agenda 22-05-25.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Project Status Meeting Agenda"
+                    description="Template agenda for regular project status review meetings."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Agendas/Project_Status_Meeting_AgendaV2.doc"
+                  />
+                </Col>
+              </Row>
+            </Tab>
+
+            <Tab eventKey="logbooks" title="Individual Logbooks">
+              <h2>Team Member Logbooks</h2>
+              <p>
+                Individual contribution records showing personal work, learning, and project involvement for each team member.
+              </p>
+
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Thomas Robinson - Logbook"
+                    description="Personal logbook documenting technical contributions, research activities, and project involvement."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Thomas Robinson v1.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Win Phyo - Logbook"
+                    description="Individual contribution record including testing activities and technical development work."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Win Phyo v1.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Nathan Quai Hoi - Logbook"
+                    description="Personal documentation of data analysis work, scripting contributions, and project participation."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Nathan Quai Hoi v1.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Zafar Azad - Logbook"
+                    description="Individual record of configuration work, testing activities, and collaborative contributions."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Zafar Azad v1.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Charmi Patel - Logbook"
+                    description="Personal contribution documentation including research, analysis, and project management activities."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Charmi Patel v1.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Kylie Afable - Logbook"
+                    description="Individual documentation of project contributions, learning activities, and collaborative work."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Kylie Afable v1.xlsx"
+                  />
+                </Col>
+              </Row>
+            </Tab>
+
+            <Tab eventKey="evidence" title="Team Evidence">
+              <h2>Individual Contribution Evidence</h2>
+              <p>
+                Specific work samples and evidence demonstrating individual team member contributions to the project.
+              </p>
+
+              <h4>Thomas - Technical Implementation</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Network Testing Scripts"
+                    description="IPv4 and IPv6 testing scripts for network performance evaluation."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Evidence/Thomas/ipv4.sh"
+                    documentType="code"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Log Export Automation"
+                    description="Script for automated log file export and data collection."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Evidence/Thomas/export_logs.sh"
+                    documentType="code"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Testing Methodology Documentation"
+                    description="Detailed methodology documentation for network performance testing procedures."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Evidence/Thomas/methodology.txt"
+                    documentType="text"
+                  />
+                </Col>
+              </Row>
+
+              <h4>Nathan - Data Analysis</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Data Converter Script"
+                    description="Python script for converting and processing network performance data."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Evidence/Nathan/dat-converter.py"
+                    documentType="code"
+                  />
+                </Col>
+              </Row>
+
+              <h4>Win - Automation</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Environment Setup Script"
+                    description="Script for automated testing environment creation and configuration."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Evidence/Win/create_script.sh"
+                    documentType="code"
+                  />
+                </Col>
+              </Row>
+
+              <h4>Larissa - Analysis Tools</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Jitter Analysis Code"
+                    description="MATLAB code for jitter analysis and statistical processing of network performance data."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Evidence/Larissa/Jitter MATLAB Code"
+                    documentType="code"
+                  />
+                </Col>
+              </Row>
+            </Tab>
+          </Tabs>
         </section>
 
         <section className="content-section">
