@@ -286,51 +286,83 @@ function CommunicationTeamwork() {
             <Tab eventKey="logbooks" title="Individual Logbooks">
               <h2>Team Member Logbooks</h2>
               <p>
-                Individual contribution records showing personal work, learning,
-                and project involvement for each team member.
+                Individual contribution records showing personal work, learning, and project involvement for each team member.
               </p>
 
+              <h4>Current Logbooks (v2)</h4>
               <Row className="mb-4">
                 <Col md={4} className="mb-3">
                   <DocumentCard
-                    title="Thomas Robinson - Logbook"
-                    description="Personal logbook documenting technical contributions, research activities, and project involvement."
-                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Thomas Robinson v1.pdf"
+                    title="Thomas Robinson - Logbook v2"
+                    description="Updated personal logbook documenting technical contributions, research activities, and final project involvement."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Thomas Robinson v2.pdf"
                   />
                 </Col>
                 <Col md={4} className="mb-3">
                   <DocumentCard
-                    title="Win Phyo - Logbook"
-                    description="Individual contribution record including testing activities and technical development work."
-                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Win Phyo v1.pdf"
+                    title="Nathan Quai Hoi - Logbook v2"
+                    description="Updated documentation of data analysis work, scripting contributions, and final project participation."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Nathan Quai Hoi v2.pdf"
                   />
                 </Col>
                 <Col md={4} className="mb-3">
                   <DocumentCard
-                    title="Nathan Quai Hoi - Logbook"
-                    description="Personal documentation of data analysis work, scripting contributions, and project participation."
-                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Nathan Quai Hoi v1.pdf"
+                    title="Charmi Patel - Logbook v2"
+                    description="Updated personal contribution documentation including research, analysis, and final project management activities."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Charmi Patel v2.pdf"
                   />
                 </Col>
                 <Col md={4} className="mb-3">
                   <DocumentCard
-                    title="Zafar Azad - Logbook"
-                    description="Individual record of configuration work, testing activities, and collaborative contributions."
-                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Zafar Azad v1.pdf"
+                    title="Kylie Afable - Logbook v2"
+                    description="Updated individual documentation of project contributions, learning activities, and final collaborative work."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Kylie Afable v2.pdf"
+                  />
+                </Col>
+              </Row>
+
+              <h4>Version History (v1)</h4>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Thomas Robinson - Logbook v1"
+                    description="Initial version of personal logbook documenting early technical contributions and research activities."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Version-History/Logbook - Thomas Robinson v1.pdf"
                   />
                 </Col>
                 <Col md={4} className="mb-3">
                   <DocumentCard
-                    title="Charmi Patel - Logbook"
-                    description="Personal contribution documentation including research, analysis, and project management activities."
-                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Charmi Patel v1.pdf"
+                    title="Win Phyo - Logbook v1"
+                    description="Original individual contribution record including testing activities and technical development work."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Version-History/Logbook - Win Phyo v1.pdf"
                   />
                 </Col>
                 <Col md={4} className="mb-3">
                   <DocumentCard
-                    title="Kylie Afable - Logbook"
-                    description="Individual documentation of project contributions, learning activities, and collaborative work."
-                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Logbook - Kylie Afable v1.xlsx"
+                    title="Nathan Quai Hoi - Logbook v1"
+                    description="Initial documentation of data analysis work, scripting contributions, and project participation."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Version-History/Logbook - Nathan Quai Hoi v1.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Zafar Azad - Logbook v1"
+                    description="Original record of configuration work, testing activities, and collaborative contributions."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Version-History/Logbook - Zafar Azad v1.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Charmi Patel - Logbook v1"
+                    description="Initial personal contribution documentation including research, analysis, and project management activities."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Version-History/Logbook - Charmi Patel v1.pdf"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Kylie Afable - Logbook v1"
+                    description="Original individual documentation of project contributions, learning activities, and collaborative work."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Version-History/Logbook - Kylie Afable v1.pdf"
                   />
                 </Col>
               </Row>
@@ -379,6 +411,14 @@ function CommunicationTeamwork() {
                     description="Python script for converting and processing network performance data."
                     documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Evidence/Nathan/dat-converter.py"
                     documentType="code"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Git Commit History"
+                    description="Complete Git commit history showing Nathan's code contributions and development timeline."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Logbooks/Evidence/Nathan/git_commits.txt"
+                    documentType="text"
                   />
                 </Col>
               </Row>

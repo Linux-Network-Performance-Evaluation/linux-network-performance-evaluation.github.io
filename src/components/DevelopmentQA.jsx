@@ -1305,17 +1305,45 @@ function DevelopmentQA() {
               <Row className="mb-4">
                 <Col md={6} className="mb-3">
                   <DocumentCard
-                    title="Project Poster v2"
-                    description="Final version of the academic poster presenting project methodology, results, and conclusions."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v2.png"
+                    title="Project Poster v3 (Final)"
+                    description="Final version of the academic poster presenting project methodology, results, and conclusions with all updates."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v3.png"
                     documentType="image"
                   />
                 </Col>
                 <Col md={6} className="mb-3">
                   <DocumentCard
+                    title="QR Code"
+                    description="QR code linking to digital project resources and portfolio website for easy access."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/qr_code.svg"
+                    documentType="image"
+                  />
+                </Col>
+              </Row>
+
+              <h3>Poster Version History</h3>
+              <Row className="mb-4">
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="Project Poster v2"
+                    description="Second iteration of the project poster with refined content and improved design."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v2.png"
+                    documentType="image"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
                     title="Project Poster v1"
                     description="Initial version of the project poster showing early design and content organization."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v1.png"
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v1.png"
+                    documentType="image"
+                  />
+                </Col>
+                <Col md={4} className="mb-3">
+                  <DocumentCard
+                    title="AUT Logo"
+                    description="Official Auckland University of Technology logo for poster branding and institutional identification."
+                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/AUT-logo-black.jpg"
                     documentType="image"
                   />
                 </Col>
@@ -1440,10 +1468,59 @@ function DevelopmentQA() {
               </p>
 
               <Tabs
-                defaultActiveKey="peer-review"
+                defaultActiveKey="qa-reports"
                 id="qa-tabs"
                 className="mb-4"
               >
+                <Tab eventKey="qa-reports" title="QA Reports">
+                  <h3>Quality Assurance Reports</h3>
+                  <p>
+                    Comprehensive quality assurance reporting and metrics tracking project quality standards and process compliance.
+                  </p>
+
+                  <Row className="mb-4">
+                    <Col md={6} className="mb-3">
+                      <DocumentCard
+                        title="QA Metric Report"
+                        description="Comprehensive quality assurance metrics report documenting testing coverage, defect rates, and quality indicators."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/QA Metric Report.docx"
+                      />
+                    </Col>
+                    <Col md={6} className="mb-3">
+                      <DocumentCard
+                        title="QA Phase Entry-Exit Log"
+                        description="Detailed log documenting quality assurance phase entry and exit criteria, ensuring systematic QA process execution."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/QA Phase Entry-Exit Log.docx"
+                      />
+                    </Col>
+                  </Row>
+
+                  <h4>Completed QA Checklists</h4>
+                  <Row className="mb-4">
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Completed Ubuntu Checklists"
+                        description="Collection of all completed quality assurance checklists for Ubuntu configuration and testing."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Ubuntu Checklists.pdf"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Completed Fedora Checklists"
+                        description="Comprehensive set of completed quality assurance checklists for Fedora environment setup and validation."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Fedora Checklists.pdf"
+                      />
+                    </Col>
+                    <Col md={4} className="mb-3">
+                      <DocumentCard
+                        title="Completed Kali Checklists"
+                        description="Full collection of completed quality assurance checklists for Kali Linux configuration and testing verification."
+                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Kali Checklists.pdf"
+                      />
+                    </Col>
+                  </Row>
+                </Tab>
+
                 <Tab eventKey="peer-review" title="Peer Review">
                   <h3>Peer Review Checklists</h3>
                   <p>

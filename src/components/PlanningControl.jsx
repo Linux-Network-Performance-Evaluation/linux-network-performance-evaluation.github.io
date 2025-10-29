@@ -51,6 +51,20 @@ function PlanningControl() {
                 </Col>
                 <Col md={6} className="mb-3">
                   <DocumentCard
+                    title="Team Portfolio Submission"
+                    description="Complete team portfolio submission containing all project deliverables, documentation, and evidence of collaborative work."
+                    documentPath="/Portfolio/Team-Portfolio-Submission.pdf"
+                  />
+                </Col>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Handover Plan"
+                    description="Comprehensive handover documentation ensuring smooth project transition and knowledge transfer to stakeholders."
+                    documentPath="/Portfolio/02-Planning-and-Control/Handover Plan.docx"
+                  />
+                </Col>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
                     title="Project Brief"
                     description="Concise project brief document outlining the core objectives and scope of our work."
                     documentPath="/Portfolio/02-Planning-and-Control/Project Brief.docx"
@@ -162,14 +176,21 @@ function PlanningControl() {
                 </Col>
                 <Col md={6} className="mb-3">
                   <DocumentCard
-                    title="Status Report v1.4 (Word)"
-                    description="Detailed status report in Word format covering project progress, challenges, and future plans."
-                    documentPath="/Portfolio/02-Planning-and-Control/Mid-Term Review/Status Report v1.4.docx"
+                    title="Status Report v1.6 (Latest)"
+                    description="Latest status report documenting final project phases, completion status, and deliverable summary."
+                    documentPath="/Portfolio/02-Planning-and-Control/Status Report v1.6.docx"
                   />
                 </Col>
               </Row>
 
               <Row className="mb-4">
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Status Report v1.5"
+                    description="Updated status report covering recent project developments and milestone achievements."
+                    documentPath="/Portfolio/02-Planning-and-Control/Mid-Term Review/Status Report v1.5.docx"
+                  />
+                </Col>
                 <Col md={6} className="mb-3">
                   <DocumentCard
                     title="Status Report Presentation"
