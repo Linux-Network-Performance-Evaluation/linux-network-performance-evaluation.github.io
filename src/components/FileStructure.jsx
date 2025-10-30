@@ -15,9 +15,9 @@ function FileStructure() {
               </p>
               <div className="text-center mb-4">
                 <small className="text-muted">
-                  <em>Last Updated: October 28, 2025</em>
+                  <em>Last Updated: October 30, 2025</em>
                   <br />
-                  <strong>Total Files: 840</strong>
+                  <strong>Total Files: 950+</strong>
                 </small>
               </div>
             </Col>
@@ -32,7 +32,8 @@ function FileStructure() {
                 {`Portfolio/
 ├── .gitignore
 ├── desktop.ini
-└── README.md`}
+├── README.md
+└── Team-Portfolio-Submission.pdf`}
               </pre>
             </Col>
           </Row>
@@ -69,11 +70,16 @@ function FileStructure() {
               <h2>02-Planning-and-Control/</h2>
               <pre className="file-structure-pre">
                 {`02-Planning-and-Control/
+├── Deliverable Acceptance Form.docx
+├── Handover Plan.docx
 ├── Project Brief.docx
+├── Status Report v1.5.docx
+├── Status Report v1.6.docx
 ├── Mid-Term Review/
 │   ├── Linux Network Evaluation (Physical) Mid-Term Status Report.pdf
 │   ├── Status Report.pptx
 │   ├── Status Report v1.4.docx
+│   ├── Status Report v1.5.docx
 │   └── Version-History/
 │       ├── Status Report v1.0.docx
 │       ├── Status Report v1.1.docx
@@ -135,6 +141,7 @@ function FileStructure() {
     ├── Proposal-Document/
     │   ├── Proposal_v2.4.docx
     │   ├── Proposal_v2.4.pdf
+    │   ├── Proposal_v2.5.docx
     │   └── Version-History/
     │       ├── Proposal_v0.1.docx
     │       ├── Proposal_v1.0.docx
@@ -173,18 +180,19 @@ function FileStructure() {
               <h2>03-Communication-and-Teamwork/</h2>
               <pre className="file-structure-pre">
                 {`03-Communication-and-Teamwork/
+├── Attendance.xlsx
 ├── Client Contract.docx
 ├── Client Feedback Form.docx
 ├── Client Feedback Form_signed.pdf
 ├── Group Details.xlsx
 ├── Timetables.xlsx
 ├── Logbooks/
-│   ├── Logbook - Charmi Patel v1.pdf
-│   ├── Logbook - Kylie Afable v1.xlsx
-│   ├── Logbook - Nathan Quai Hoi v1.pdf
-│   ├── Logbook - Thomas Robinson v1.pdf
-│   ├── Logbook - Win Phyo v1.pdf
-│   ├── Logbook - Zafar Azad v1.pdf
+│   ├── Logbook - Charmi Patel v2.pdf
+│   ├── Logbook - Kylie Afable v2.xlsx
+│   ├── Logbook - Nathan Quai Hoi v2.pdf
+│   ├── Logbook - Thomas Robinson v2.pdf
+│   ├── Logbook - Win Phyo v2.pdf
+│   ├── Logbook - Zafar Azad v2.pdf
 │   └── Evidence/
 │       ├── Charmi/
 │       ├── Kylie/
@@ -617,6 +625,7 @@ function FileStructure() {
 │   ├── AUT-logo-black.jpg
 │   ├── poster_v1.png
 │   ├── poster_v2.png
+│   ├── poster_v3.png
 │   ├── qr_code.svg
 │   └── Sections/
 │       ├── 01 Background.docx
@@ -680,7 +689,7 @@ function FileStructure() {
                   </li>
                 </ol>
                 <div className="mt-3">
-                  <strong>Total File Count:</strong> 840 files across all
+                  <strong>Total File Count:</strong> 950+ files across all
                   directories and subdirectories.
                 </div>
               </div>

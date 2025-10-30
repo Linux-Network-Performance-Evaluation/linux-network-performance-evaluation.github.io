@@ -1467,15 +1467,12 @@ function DevelopmentQA() {
                 practices.
               </p>
 
-              <Tabs
-                defaultActiveKey="qa-reports"
-                id="qa-tabs"
-                className="mb-4"
-              >
+              <Tabs defaultActiveKey="qa-reports" id="qa-tabs" className="mb-4">
                 <Tab eventKey="qa-reports" title="QA Reports">
                   <h3>Quality Assurance Reports</h3>
                   <p>
-                    Comprehensive quality assurance reporting and metrics tracking project quality standards and process compliance.
+                    Comprehensive quality assurance reporting and metrics
+                    tracking project quality standards and process compliance.
                   </p>
 
                   <Row className="mb-4">

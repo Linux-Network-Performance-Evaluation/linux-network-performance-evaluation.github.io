@@ -27,21 +27,28 @@ function PlanningControl() {
               <Row className="mb-4">
                 <Col md={6} className="mb-3">
                   <DocumentCard
-                    title="Project Proposal v2.4 (PDF)"
-                    description="The latest version of our project proposal document containing detailed objectives, methodology, and timeline."
-                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.4.pdf"
+                    title="Project Proposal v2.5 (Latest)"
+                    description="The most recent version of our project proposal document with final updates and refinements."
+                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.5.docx"
                   />
                 </Col>
                 <Col md={6} className="mb-3">
                   <DocumentCard
-                    title="Project Proposal v2.4 (Word)"
-                    description="The same proposal document in Word format for better editing and collaboration capabilities."
-                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.4.docx"
+                    title="Project Proposal v2.4 (PDF)"
+                    description="PDF version of the comprehensive project proposal document containing detailed objectives, methodology, and timeline."
+                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.4.pdf"
                   />
                 </Col>
               </Row>
 
               <Row className="mb-4">
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Project Proposal v2.4 (Word)"
+                    description="Word version of the proposal document for editing and collaboration capabilities."
+                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.4.docx"
+                  />
+                </Col>
                 <Col md={6} className="mb-3">
                   <DocumentCard
                     title="Proposal Presentation"
@@ -54,6 +61,13 @@ function PlanningControl() {
                     title="Team Portfolio Submission"
                     description="Complete team portfolio submission containing all project deliverables, documentation, and evidence of collaborative work."
                     documentPath="/Portfolio/Team-Portfolio-Submission.pdf"
+                  />
+                </Col>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Deliverable Acceptance Form"
+                    description="Formal acceptance documentation for project deliverables, ensuring stakeholder sign-off and completion verification."
+                    documentPath="/Portfolio/02-Planning-and-Control/Deliverable Acceptance Form.docx"
                   />
                 </Col>
                 <Col md={6} className="mb-3">

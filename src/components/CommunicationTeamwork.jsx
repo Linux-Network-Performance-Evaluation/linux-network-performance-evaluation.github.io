@@ -286,7 +286,8 @@ function CommunicationTeamwork() {
             <Tab eventKey="logbooks" title="Individual Logbooks">
               <h2>Team Member Logbooks</h2>
               <p>
-                Individual contribution records showing personal work, learning, and project involvement for each team member.
+                Individual contribution records showing personal work, learning,
+                and project involvement for each team member.
               </p>
 
               <h4>Current Logbooks (v2)</h4>
