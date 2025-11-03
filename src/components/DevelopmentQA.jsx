@@ -21,7 +21,6 @@ function DevelopmentQA() {
   const technologies = [
     "Linux (Fedora, Ubuntu, Kali)",
     "D-ITG Traffic Generator",
-    "iPerf Network Testing",
     "QEMU Virtualization",
     "Python Scripting",
     "Network Configuration",
@@ -975,7 +974,7 @@ function DevelopmentQA() {
                         <li>95% confidence interval measurements</li>
                         <li>Multiple test runs for statistical significance</li>
                         <li>Controlled physical network environment</li>
-                        <li>D-ITG and iPerf testing tools</li>
+                        <li>D-ITG and testing tools</li>
                       </ul>
                     </Card.Body>
                   </Card>
