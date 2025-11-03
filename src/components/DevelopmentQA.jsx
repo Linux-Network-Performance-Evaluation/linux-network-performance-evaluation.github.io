@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReactDOM from "react-dom";
 import {
   Badge,
   Button,
@@ -448,1176 +449,1268 @@ function DevelopmentQA() {
   };
 
   return (
-    <main>
-      <Container>
-        <section className="content-section">
-          <Row>
-            <Col>
-              <h1 className="text-center mb-4">
-                Development & Quality Assurance
-              </h1>
-              <p>
-                This section covers our development methodologies, testing
-                frameworks, and quality assurance processes throughout the
-                project lifecycle.
-              </p>
-            </Col>
-          </Row>
-        </section>
+    <>
+      <main>
+        <Container>
+          <section className="content-section">
+            <Row>
+              <Col>
+                <h1 className="text-center mb-4">
+                  Development & Quality Assurance
+                </h1>
+                <p>
+                  This section covers our development methodologies, testing
+                  frameworks, and quality assurance processes throughout the
+                  project lifecycle.
+                </p>
+              </Col>
+            </Row>
+          </section>
 
-        <section className="content-section">
-          <Row>
-            <Col md={6} className="mb-4">
-              <Card className="h-100">
-                <Card.Body>
-                  <Card.Title className="h3">Development Process</Card.Title>
-                  <Card.Text>
-                    Our development approach followed industry best practices
-                    with emphasis on reproducibility and reliability.
-                  </Card.Text>
-                  <ul>
-                    <li>Environment setup and configuration</li>
-                    <li>Script development for automation</li>
-                    <li>Network testing implementation</li>
-                    <li>Data collection and processing</li>
-                    <li>Performance analysis tools</li>
-                  </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} className="mb-4">
-              <Card className="h-100">
-                <Card.Body>
-                  <Card.Title className="h3">Quality Assurance</Card.Title>
-                  <Card.Text>
-                    Rigorous testing and validation processes ensured the
-                    reliability and accuracy of our results.
-                  </Card.Text>
-                  <ul>
-                    <li>Test case development and validation</li>
-                    <li>Automated testing procedures</li>
-                    <li>Statistical validation methods</li>
-                    <li>95% confidence interval compliance</li>
-                    <li>Reproducibility verification</li>
-                  </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </section>
+          <section className="content-section">
+            <Row>
+              <Col md={6} className="mb-4">
+                <Card className="h-100">
+                  <Card.Body>
+                    <Card.Title className="h3">Development Process</Card.Title>
+                    <Card.Text>
+                      Our development approach followed industry best practices
+                      with emphasis on reproducibility and reliability.
+                    </Card.Text>
+                    <ul>
+                      <li>Environment setup and configuration</li>
+                      <li>Script development for automation</li>
+                      <li>Network testing implementation</li>
+                      <li>Data collection and processing</li>
+                      <li>Performance analysis tools</li>
+                    </ul>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={6} className="mb-4">
+                <Card className="h-100">
+                  <Card.Body>
+                    <Card.Title className="h3">Quality Assurance</Card.Title>
+                    <Card.Text>
+                      Rigorous testing and validation processes ensured the
+                      reliability and accuracy of our results.
+                    </Card.Text>
+                    <ul>
+                      <li>Test case development and validation</li>
+                      <li>Automated testing procedures</li>
+                      <li>Statistical validation methods</li>
+                      <li>95% confidence interval compliance</li>
+                      <li>Reproducibility verification</li>
+                    </ul>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </section>
 
-        <section className="content-section">
-          <Row>
-            <Col>
-              <h2>Technologies & Tools</h2>
-              <p className="mb-3">
-                Our project utilised a comprehensive set of technologies and
-                tools for network performance evaluation:
-              </p>
-              <div className="d-flex flex-wrap gap-2">
-                {technologies.map((tech, index) => (
-                  <Badge key={index} bg="secondary" className="fs-6 p-2">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </Col>
-          </Row>
-        </section>
+          <section className="content-section">
+            <Row>
+              <Col>
+                <h2>Technologies & Tools</h2>
+                <p className="mb-3">
+                  Our project utilised a comprehensive set of technologies and
+                  tools for network performance evaluation:
+                </p>
+                <div className="d-flex flex-wrap gap-2">
+                  {technologies.map((tech, index) => (
+                    <Badge key={index} bg="secondary" className="fs-6 p-2">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </Col>
+            </Row>
+          </section>
 
-        <section className="content-section">
-          <Row>
-            <Col>
-              <h2>Testing Methodology</h2>
-              <Row>
-                <Col lg={4} className="mb-3">
-                  <h4>Network Configuration</h4>
-                  <p>
-                    Setup and configuration of Linux systems as software routers
-                    with proper network interfaces and routing protocols.
-                  </p>
-                </Col>
-                <Col lg={4} className="mb-3">
-                  <h4>Performance Testing</h4>
-                  <p>
-                    Systematic evaluation of throughput, delay, jitter, and
-                    packet loss across different packet sizes and protocols.
-                  </p>
-                </Col>
-                <Col lg={4} className="mb-3">
-                  <h4>Data Analysis</h4>
-                  <p>
-                    Statistical analysis of results with confidence intervals
-                    and comparative performance metrics across distributions.
-                  </p>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </section>
+          <section className="content-section">
+            <Row>
+              <Col>
+                <h2>Testing Methodology</h2>
+                <Row>
+                  <Col lg={4} className="mb-3">
+                    <h4>Network Configuration</h4>
+                    <p>
+                      Setup and configuration of Linux systems as software
+                      routers with proper network interfaces and routing
+                      protocols.
+                    </p>
+                  </Col>
+                  <Col lg={4} className="mb-3">
+                    <h4>Performance Testing</h4>
+                    <p>
+                      Systematic evaluation of throughput, delay, jitter, and
+                      packet loss across different packet sizes and protocols.
+                    </p>
+                  </Col>
+                  <Col lg={4} className="mb-3">
+                    <h4>Data Analysis</h4>
+                    <p>
+                      Statistical analysis of results with confidence intervals
+                      and comparative performance metrics across distributions.
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </section>
 
-        <section className="content-section">
-          <Row>
-            <Col>
-              <h2 className="text-center mb-4">
-                Network Performance Evaluation Results
-              </h2>
-              <p className="text-center mb-4">
-                Comprehensive performance data collected from our Linux network
-                evaluation tests. Data includes delay, jitter, throughput, and
-                packet loss measurements across different packet sizes for
-                Ubuntu, Fedora, and Kali Linux distributions using both TCP and
-                UDP protocols.
-              </p>
+          <section className="content-section">
+            <Row>
+              <Col>
+                <h2 className="text-center mb-4">
+                  Network Performance Evaluation Results
+                </h2>
+                <p className="text-center mb-4">
+                  Comprehensive performance data collected from our Linux
+                  network evaluation tests. Data includes delay, jitter,
+                  throughput, and packet loss measurements across different
+                  packet sizes for Ubuntu, Fedora, and Kali Linux distributions
+                  using both TCP and UDP protocols.
+                </p>
 
-              <Tabs
-                activeKey={activeKey}
-                onSelect={(k) => setActiveKey(k)}
-                className="mb-4 justify-content-center"
-              >
-                <Tab eventKey="ipv4" title="IPv4 Results">
-                  <Card className="shadow-sm">
-                    <Card.Body>
-                      {renderDataTable(ipv4_datasets, "IPv4")}
-                    </Card.Body>
-                  </Card>
-                </Tab>
-                <Tab eventKey="ipv6" title="IPv6 Results">
-                  <Card className="shadow-sm">
-                    <Card.Body>
-                      {renderDataTable(ipv6_datasets, "IPv6")}
-                    </Card.Body>
-                  </Card>
-                </Tab>
-                <Tab eventKey="visualisations" title="Data Visualisations">
-                  <Card className="shadow-sm">
-                    <Card.Body>
-                      <h3 className="mb-4">Performance Comparison Graphs</h3>
-                      <p className="mb-4">
-                        Visual representations of network performance data
-                        showing comparative analysis across different Linux
-                        distributions and protocol versions.
-                      </p>
+                <Tabs
+                  activeKey={activeKey}
+                  onSelect={(k) => setActiveKey(k)}
+                  className="mb-4 justify-content-center"
+                >
+                  <Tab eventKey="ipv4" title="IPv4 Results">
+                    <Card className="shadow-sm">
+                      <Card.Body>
+                        {renderDataTable(ipv4_datasets, "IPv4")}
+                      </Card.Body>
+                    </Card>
+                  </Tab>
+                  <Tab eventKey="ipv6" title="IPv6 Results">
+                    <Card className="shadow-sm">
+                      <Card.Body>
+                        {renderDataTable(ipv6_datasets, "IPv6")}
+                      </Card.Body>
+                    </Card>
+                  </Tab>
+                  <Tab eventKey="visualisations" title="Data Visualisations">
+                    <Card className="shadow-sm">
+                      <Card.Body>
+                        <h3 className="mb-4">Performance Comparison Graphs</h3>
+                        <p className="mb-4">
+                          Visual representations of network performance data
+                          showing comparative analysis across different Linux
+                          distributions and protocol versions.
+                        </p>
 
-                      <Tabs
-                        defaultActiveKey="ipv4-comparison"
-                        id="graph-tabs"
-                        className="mb-4"
-                      >
-                        <Tab eventKey="ipv4-comparison" title="IPv4 Analysis">
-                          <h4 className="mb-3">IPv4 Performance Comparisons</h4>
-                          <Row>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">Delay Comparison</h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png"
-                                    alt="IPv4 Delay Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png",
-                                        "IPv4 Delay Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">Jitter Comparison</h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png"
-                                    alt="IPv4 Jitter Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png",
-                                        "IPv4 Jitter Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">
-                                    Throughput Comparison
-                                  </h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png"
-                                    alt="IPv4 Throughput Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png",
-                                        "IPv4 Throughput Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">
-                                    Packet Loss Comparison
-                                  </h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png"
-                                    alt="IPv4 Packet Loss Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png",
-                                        "IPv4 Packet Loss Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                          </Row>
-                        </Tab>
-
-                        <Tab eventKey="ipv6-comparison" title="IPv6 Analysis">
-                          <h4 className="mb-3">IPv6 Performance Comparisons</h4>
-                          <Row>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">Delay Comparison</h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png"
-                                    alt="IPv6 Delay Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png",
-                                        "IPv6 Delay Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">Jitter Comparison</h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png"
-                                    alt="IPv6 Jitter Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png",
-                                        "IPv6 Jitter Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">
-                                    Throughput Comparison
-                                  </h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png"
-                                    alt="IPv6 Throughput Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png",
-                                        "IPv6 Throughput Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">
-                                    Packet Loss Comparison
-                                  </h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png"
-                                    alt="IPv6 Packet Loss Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png",
-                                        "IPv6 Packet Loss Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                          </Row>
-                        </Tab>
-
-                        <Tab
-                          eventKey="protocol-comparison"
-                          title="IPv4 vs IPv6"
+                        <Tabs
+                          defaultActiveKey="ipv4-comparison"
+                          id="graph-tabs"
+                          className="mb-4"
                         >
-                          <h4 className="mb-3">
-                            IPv4 vs IPv6 Protocol Comparisons
-                          </h4>
-                          <Row>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">Delay: IPv4 vs IPv6</h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png"
-                                    alt="IPv4 vs IPv6 Delay Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png",
-                                        "IPv4 vs IPv6 Delay Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">Jitter: IPv4 vs IPv6</h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png"
-                                    alt="IPv4 vs IPv6 Jitter Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png",
-                                        "IPv4 vs IPv6 Jitter Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">
-                                    Throughput: IPv4 vs IPv6
-                                  </h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png"
-                                    alt="IPv4 vs IPv6 Throughput Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png",
-                                        "IPv4 vs IPv6 Throughput Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col md={6} className="mb-4">
-                              <Card className="h-100">
-                                <Card.Header>
-                                  <h6 className="mb-0">
-                                    Packet Loss: IPv4 vs IPv6
-                                  </h6>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                  <img
-                                    src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png"
-                                    alt="IPv4 vs IPv6 Packet Loss Comparison"
-                                    className="img-fluid"
-                                    style={{
-                                      maxHeight: "400px",
-                                      cursor: "pointer",
-                                    }}
-                                    onClick={() =>
-                                      handleImageClick(
-                                        "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png",
-                                        "IPv4 vs IPv6 Packet Loss Comparison"
-                                      )
-                                    }
-                                  />
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                          </Row>
-                        </Tab>
+                          <Tab eventKey="ipv4-comparison" title="IPv4 Analysis">
+                            <h4 className="mb-3">
+                              IPv4 Performance Comparisons
+                            </h4>
+                            <Row>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">Delay Comparison</h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png"
+                                      alt="IPv4 Delay Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                        transition: "transform 0.3s ease",
+                                      }}
+                                      onMouseEnter={(e) =>
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
+                                      }
+                                      onMouseLeave={(e) =>
+                                        (e.target.style.transform = "scale(1)")
+                                      }
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png",
+                                          "IPv4 Delay Comparison"
+                                        )
+                                      }
+                                    />
+                                    <p className="mt-2 text-muted">
+                                      <small>Click to view in full size</small>
+                                    </p>
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">Jitter Comparison</h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png"
+                                      alt="IPv4 Jitter Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                        transition: "transform 0.3s ease",
+                                      }}
+                                      onMouseEnter={(e) =>
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
+                                      }
+                                      onMouseLeave={(e) =>
+                                        (e.target.style.transform = "scale(1)")
+                                      }
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png",
+                                          "IPv4 Jitter Comparison"
+                                        )
+                                      }
+                                    />
+                                    <p className="mt-2 text-muted">
+                                      <small>Click to view in full size</small>
+                                    </p>
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">
+                                      Throughput Comparison
+                                    </h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png"
+                                      alt="IPv4 Throughput Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                        transition: "transform 0.3s ease",
+                                      }}
+                                      onMouseEnter={(e) =>
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
+                                      }
+                                      onMouseLeave={(e) =>
+                                        (e.target.style.transform = "scale(1)")
+                                      }
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png",
+                                          "IPv4 Throughput Comparison"
+                                        )
+                                      }
+                                    />
+                                    <p className="mt-2 text-muted">
+                                      <small>Click to view in full size</small>
+                                    </p>
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">
+                                      Packet Loss Comparison
+                                    </h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png"
+                                      alt="IPv4 Packet Loss Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                        transition: "transform 0.3s ease",
+                                      }}
+                                      onMouseEnter={(e) =>
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
+                                      }
+                                      onMouseLeave={(e) =>
+                                        (e.target.style.transform = "scale(1)")
+                                      }
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png",
+                                          "IPv4 Packet Loss Comparison"
+                                        )
+                                      }
+                                    />
+                                    <p className="mt-2 text-muted">
+                                      <small>Click to view in full size</small>
+                                    </p>
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                            </Row>
+                          </Tab>
 
-                        <Tab eventKey="python-scripts" title="Analysis Scripts">
-                          <h4 className="mb-3">Data Analysis Scripts</h4>
-                          <p className="mb-4">
-                            Python scripts used to generate the performance
-                            comparison graphs and statistical analysis.
-                          </p>
-                          <Row>
-                            <Col md={4} className="mb-3">
-                              <DocumentCard
-                                title="IPv4 Graphing Script"
-                                description="Python script for generating IPv4 performance comparison graphs and statistical visualisations."
-                                documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_ipv4.py"
-                              />
-                            </Col>
-                            <Col md={4} className="mb-3">
-                              <DocumentCard
-                                title="IPv6 Graphing Script"
-                                description="Python script for generating IPv6 performance comparison graphs and data visualisations."
-                                documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_ipv6.py"
-                              />
-                            </Col>
-                            <Col md={4} className="mb-3">
-                              <DocumentCard
-                                title="IPv4 vs IPv6 Comparison Script"
-                                description="Python script for generating comparative analysis graphs between IPv4 and IPv6 protocols."
-                                documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_compare_ipv4_ipv6.py"
-                              />
-                            </Col>
-                          </Row>
-                        </Tab>
-                      </Tabs>
-                    </Card.Body>
-                  </Card>
-                </Tab>
-              </Tabs>
+                          <Tab eventKey="ipv6-comparison" title="IPv6 Analysis">
+                            <h4 className="mb-3">
+                              IPv6 Performance Comparisons
+                            </h4>
+                            <Row>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">Delay Comparison</h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png"
+                                      alt="IPv6 Delay Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                        transition: "transform 0.3s ease",
+                                      }}
+                                      onMouseEnter={(e) =>
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
+                                      }
+                                      onMouseLeave={(e) =>
+                                        (e.target.style.transform = "scale(1)")
+                                      }
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png",
+                                          "IPv6 Delay Comparison"
+                                        )
+                                      }
+                                    />
+                                    <p className="mt-2 text-muted">
+                                      <small>Click to view in full size</small>
+                                    </p>
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">Jitter Comparison</h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png"
+                                      alt="IPv6 Jitter Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                        transition: "transform 0.3s ease",
+                                      }}
+                                      onMouseEnter={(e) =>
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
+                                      }
+                                      onMouseLeave={(e) =>
+                                        (e.target.style.transform = "scale(1)")
+                                      }
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png",
+                                          "IPv6 Jitter Comparison"
+                                        )
+                                      }
+                                    />
+                                    <p className="mt-2 text-muted">
+                                      <small>Click to view in full size</small>
+                                    </p>
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">
+                                      Throughput Comparison
+                                    </h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png"
+                                      alt="IPv6 Throughput Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                      }}
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png",
+                                          "IPv6 Throughput Comparison"
+                                        )
+                                      }
+                                    />
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">
+                                      Packet Loss Comparison
+                                    </h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png"
+                                      alt="IPv6 Packet Loss Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                      }}
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png",
+                                          "IPv6 Packet Loss Comparison"
+                                        )
+                                      }
+                                    />
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                            </Row>
+                          </Tab>
 
-              <Row className="mt-4">
-                <Col md={6} className="mb-3">
-                  <Card className="accent-bg h-100">
-                    <Card.Body>
-                      <Card.Title className="h5">
-                        Data Collection Methodology
-                      </Card.Title>
-                      <ul className="mb-0">
-                        <li>95% confidence interval measurements</li>
-                        <li>Multiple test runs for statistical significance</li>
-                        <li>Controlled physical network environment</li>
-                        <li>D-ITG and testing tools</li>
-                      </ul>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={6} className="mb-3">
-                  <Card className="accent-bg h-100">
-                    <Card.Body>
-                      <Card.Title className="h5">
-                        Key Metrics Measured
-                      </Card.Title>
-                      <ul className="mb-0">
-                        <li>
-                          <strong>Delay:</strong> End-to-end packet latency (ms)
-                        </li>
-                        <li>
-                          <strong>Jitter:</strong> Variation in packet delay
-                          (ms)
-                        </li>
-                        <li>
-                          <strong>Throughput:</strong> Data transfer rate (bps)
-                        </li>
-                        <li>
-                          <strong>Packet Loss:</strong> Percentage of lost
-                          packets (%)
-                        </li>
-                      </ul>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </section>
+                          <Tab
+                            eventKey="protocol-comparison"
+                            title="IPv4 vs IPv6"
+                          >
+                            <h4 className="mb-3">
+                              IPv4 vs IPv6 Protocol Comparisons
+                            </h4>
+                            <Row>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">
+                                      Delay: IPv4 vs IPv6
+                                    </h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png"
+                                      alt="IPv4 vs IPv6 Delay Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                      }}
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png",
+                                          "IPv4 vs IPv6 Delay Comparison"
+                                        )
+                                      }
+                                    />
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">
+                                      Jitter: IPv4 vs IPv6
+                                    </h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png"
+                                      alt="IPv4 vs IPv6 Jitter Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                      }}
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png",
+                                          "IPv4 vs IPv6 Jitter Comparison"
+                                        )
+                                      }
+                                    />
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">
+                                      Throughput: IPv4 vs IPv6
+                                    </h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png"
+                                      alt="IPv4 vs IPv6 Throughput Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                      }}
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png",
+                                          "IPv4 vs IPv6 Throughput Comparison"
+                                        )
+                                      }
+                                    />
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                              <Col md={6} className="mb-4">
+                                <Card className="h-100">
+                                  <Card.Header>
+                                    <h6 className="mb-0">
+                                      Packet Loss: IPv4 vs IPv6
+                                    </h6>
+                                  </Card.Header>
+                                  <Card.Body className="text-center">
+                                    <img
+                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png"
+                                      alt="IPv4 vs IPv6 Packet Loss Comparison"
+                                      className="img-fluid"
+                                      style={{
+                                        maxHeight: "400px",
+                                        cursor: "pointer",
+                                      }}
+                                      onClick={() =>
+                                        handleImageClick(
+                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png",
+                                          "IPv4 vs IPv6 Packet Loss Comparison"
+                                        )
+                                      }
+                                    />
+                                  </Card.Body>
+                                </Card>
+                              </Col>
+                            </Row>
+                          </Tab>
 
-        <section className="content-section">
-          <Row>
-            <Col>
-              <h2>Testing Methodologies & Documentation</h2>
-              <p>
-                Comprehensive testing methodologies, evaluation procedures, and
-                documentation for consistent and reliable network performance
-                testing across all Linux distributions.
-              </p>
+                          <Tab
+                            eventKey="python-scripts"
+                            title="Analysis Scripts"
+                          >
+                            <h4 className="mb-3">Data Analysis Scripts</h4>
+                            <p className="mb-4">
+                              Python scripts used to generate the performance
+                              comparison graphs and statistical analysis.
+                            </p>
+                            <Row>
+                              <Col md={4} className="mb-3">
+                                <DocumentCard
+                                  title="IPv4 Graphing Script"
+                                  description="Python script for generating IPv4 performance comparison graphs and statistical visualisations."
+                                  documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_ipv4.py"
+                                />
+                              </Col>
+                              <Col md={4} className="mb-3">
+                                <DocumentCard
+                                  title="IPv6 Graphing Script"
+                                  description="Python script for generating IPv6 performance comparison graphs and data visualisations."
+                                  documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_ipv6.py"
+                                />
+                              </Col>
+                              <Col md={4} className="mb-3">
+                                <DocumentCard
+                                  title="IPv4 vs IPv6 Comparison Script"
+                                  description="Python script for generating comparative analysis graphs between IPv4 and IPv6 protocols."
+                                  documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_compare_ipv4_ipv6.py"
+                                />
+                              </Col>
+                            </Row>
+                          </Tab>
+                        </Tabs>
+                      </Card.Body>
+                    </Card>
+                  </Tab>
+                </Tabs>
 
-              <Tabs
-                defaultActiveKey="methodologies"
-                id="methodology-tabs"
-                className="mb-4"
-              >
-                <Tab eventKey="methodologies" title="Testing Methodologies">
-                  <h3>Distribution-Specific Methodologies</h3>
-                  <p>
-                    Detailed testing methodologies tailored for each Linux
-                    distribution, ensuring consistent evaluation procedures and
-                    accurate performance measurements.
-                  </p>
+                <Row className="mt-4">
+                  <Col md={6} className="mb-3">
+                    <Card className="accent-bg h-100">
+                      <Card.Body>
+                        <Card.Title className="h5">
+                          Data Collection Methodology
+                        </Card.Title>
+                        <ul className="mb-0">
+                          <li>95% confidence interval measurements</li>
+                          <li>
+                            Multiple test runs for statistical significance
+                          </li>
+                          <li>Controlled physical network environment</li>
+                          <li>D-ITG and testing tools</li>
+                        </ul>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col md={6} className="mb-3">
+                    <Card className="accent-bg h-100">
+                      <Card.Body>
+                        <Card.Title className="h5">
+                          Key Metrics Measured
+                        </Card.Title>
+                        <ul className="mb-0">
+                          <li>
+                            <strong>Delay:</strong> End-to-end packet latency
+                            (ms)
+                          </li>
+                          <li>
+                            <strong>Jitter:</strong> Variation in packet delay
+                            (ms)
+                          </li>
+                          <li>
+                            <strong>Throughput:</strong> Data transfer rate
+                            (bps)
+                          </li>
+                          <li>
+                            <strong>Packet Loss:</strong> Percentage of lost
+                            packets (%)
+                          </li>
+                        </ul>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </section>
 
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Server Methodology"
-                        description="Comprehensive testing methodology for Ubuntu Server including configuration procedures, testing protocols, and performance evaluation guidelines."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Methodology - Ubuntu Server.docx"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Fedora Server Methodology"
-                        description="Detailed testing methodology for Fedora Server with specific configuration steps, evaluation procedures, and performance benchmarking protocols."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Methodology - Fedora Server.docx"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Kali Linux Methodology"
-                        description="Specialised testing methodology for Kali Linux including security-focused configuration and network performance evaluation procedures."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Methodology - Kali Linux.docx"
-                      />
-                    </Col>
-                  </Row>
-                </Tab>
+          <section className="content-section">
+            <Row>
+              <Col>
+                <h2>Testing Methodologies & Documentation</h2>
+                <p>
+                  Comprehensive testing methodologies, evaluation procedures,
+                  and documentation for consistent and reliable network
+                  performance testing across all Linux distributions.
+                </p>
 
-                <Tab eventKey="evaluation-guides" title="Evaluation Guides">
-                  <h3>Testing Implementation Guides</h3>
-                  <p>
-                    Step-by-step guides and procedures for implementing network
-                    performance evaluation testing across different environments
-                    and configurations.
-                  </p>
+                <Tabs
+                  defaultActiveKey="methodologies"
+                  id="methodology-tabs"
+                  className="mb-4"
+                >
+                  <Tab eventKey="methodologies" title="Testing Methodologies">
+                    <h3>Distribution-Specific Methodologies</h3>
+                    <p>
+                      Detailed testing methodologies tailored for each Linux
+                      distribution, ensuring consistent evaluation procedures
+                      and accurate performance measurements.
+                    </p>
 
-                  <Row className="mb-4">
-                    <Col md={6} className="mb-3">
-                      <DocumentCard
-                        title="How to Run Evaluation Testing"
-                        description="Complete guide for executing network performance evaluation tests including setup procedures, testing protocols, and data collection methods."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/How to run evaluation testing.docx"
-                      />
-                    </Col>
-                    <Col md={6} className="mb-3">
-                      <DocumentCard
-                        title="Chrony NTP Server Time Synchronisation"
-                        description="Technical documentation for implementing Chrony NTP server for precise time synchronisation across testing environments."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Chrony NTP server time synchronisation.docx"
-                      />
-                    </Col>
-                  </Row>
-                </Tab>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Server Methodology"
+                          description="Comprehensive testing methodology for Ubuntu Server including configuration procedures, testing protocols, and performance evaluation guidelines."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Methodology - Ubuntu Server.docx"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Fedora Server Methodology"
+                          description="Detailed testing methodology for Fedora Server with specific configuration steps, evaluation procedures, and performance benchmarking protocols."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Methodology - Fedora Server.docx"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Kali Linux Methodology"
+                          description="Specialised testing methodology for Kali Linux including security-focused configuration and network performance evaluation procedures."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Methodology - Kali Linux.docx"
+                        />
+                      </Col>
+                    </Row>
+                  </Tab>
 
-                <Tab eventKey="data-analysis" title="Data Analysis Tools">
-                  <h3>Data Processing & Analysis</h3>
-                  <p>
-                    Tools and scripts for processing raw test data, generating
-                    comparative analysis, and creating visualisations of network
-                    performance results.
-                  </p>
+                  <Tab eventKey="evaluation-guides" title="Evaluation Guides">
+                    <h3>Testing Implementation Guides</h3>
+                    <p>
+                      Step-by-step guides and procedures for implementing
+                      network performance evaluation testing across different
+                      environments and configurations.
+                    </p>
 
-                  <Row className="mb-4">
-                    <Col md={6} className="mb-3">
-                      <DocumentCard
-                        title="Data Comparison Analysis"
-                        description="Excel workbook containing comparative analysis of network performance data across different Linux distributions and configurations."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Compare Data.xlsx"
-                      />
-                    </Col>
-                    <Col md={6} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu-Fedora Sample Graphing"
-                        description="Sample graphing and visualisation templates for comparing Ubuntu and Fedora performance metrics."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Ubuntu_Fedora_Sample_Graphing.xlsx"
-                      />
-                    </Col>
-                    <Col md={6} className="mb-3">
-                      <DocumentCard
-                        title="Clean Data Python Script"
-                        description="Python script for data cleaning and preprocessing of network performance test results."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/clean_data.py"
-                        documentType="code"
-                      />
-                    </Col>
-                    <Col md={6} className="mb-3">
-                      <DocumentCard
-                        title="Excel Processing Script"
-                        description="Python script for automated Excel data processing and analysis generation."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/excel.py"
-                        documentType="code"
-                      />
-                    </Col>
-                  </Row>
+                    <Row className="mb-4">
+                      <Col md={6} className="mb-3">
+                        <DocumentCard
+                          title="How to Run Evaluation Testing"
+                          description="Complete guide for executing network performance evaluation tests including setup procedures, testing protocols, and data collection methods."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/How to run evaluation testing.docx"
+                        />
+                      </Col>
+                      <Col md={6} className="mb-3">
+                        <DocumentCard
+                          title="Chrony NTP Server Time Synchronisation"
+                          description="Technical documentation for implementing Chrony NTP server for precise time synchronisation across testing environments."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Chrony NTP server time synchronisation.docx"
+                        />
+                      </Col>
+                    </Row>
+                  </Tab>
 
-                  <h4>Generated Performance Graphs</h4>
-                  <p>
-                    Automatically generated comparative visualisations showing
-                    network performance differences across distributions and
-                    protocols.
-                  </p>
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="IPv4 vs IPv6 Delay Comparison"
-                        description="Comparative graph showing delay performance differences between IPv4 and IPv6 protocols."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png"
-                        documentType="image"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="IPv4 vs IPv6 Throughput Comparison"
-                        description="Throughput performance comparison between IPv4 and IPv6 across different packet sizes."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png"
-                        documentType="image"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="IPv4 Distribution Comparison"
-                        description="Performance comparison graphs for IPv4 across Ubuntu, Fedora, and Kali Linux distributions."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png"
-                        documentType="image"
-                      />
-                    </Col>
-                  </Row>
-                </Tab>
+                  <Tab eventKey="data-analysis" title="Data Analysis Tools">
+                    <h3>Data Processing & Analysis</h3>
+                    <p>
+                      Tools and scripts for processing raw test data, generating
+                      comparative analysis, and creating visualisations of
+                      network performance results.
+                    </p>
 
-                <Tab eventKey="configurations" title="System Configurations">
-                  <h3>Network Configuration Files</h3>
-                  <p>
-                    Complete system and network configuration files for all
-                    testing environments including time synchronisation, network
-                    interfaces, and device rules.
-                  </p>
+                    <Row className="mb-4">
+                      <Col md={6} className="mb-3">
+                        <DocumentCard
+                          title="Data Comparison Analysis"
+                          description="Excel workbook containing comparative analysis of network performance data across different Linux distributions and configurations."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Compare Data.xlsx"
+                        />
+                      </Col>
+                      <Col md={6} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu-Fedora Sample Graphing"
+                          description="Sample graphing and visualisation templates for comparing Ubuntu and Fedora performance metrics."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Ubuntu_Fedora_Sample_Graphing.xlsx"
+                        />
+                      </Col>
+                      <Col md={6} className="mb-3">
+                        <DocumentCard
+                          title="Clean Data Python Script"
+                          description="Python script for data cleaning and preprocessing of network performance test results."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/clean_data.py"
+                          documentType="code"
+                        />
+                      </Col>
+                      <Col md={6} className="mb-3">
+                        <DocumentCard
+                          title="Excel Processing Script"
+                          description="Python script for automated Excel data processing and analysis generation."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/excel.py"
+                          documentType="code"
+                        />
+                      </Col>
+                    </Row>
 
-                  <h4>Ubuntu Configuration</h4>
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Sender Configuration"
-                        description="Complete configuration setup for Ubuntu sender PC including network and automation scripts."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc1/home/sender/config_files.sh"
-                        documentType="code"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Receiver Log Export"
-                        description="Automated log export script for Ubuntu receiver configuration."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc2/home/receiver/export_logs.sh"
-                        documentType="code"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Chrony Configuration"
-                        description="Time synchronisation configuration for Ubuntu testing environment."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc1/etc/chrony/chrony.conf"
-                        documentType="config"
-                      />
-                    </Col>
-                  </Row>
+                    <h4>Generated Performance Graphs</h4>
+                    <p>
+                      Automatically generated comparative visualisations showing
+                      network performance differences across distributions and
+                      protocols.
+                    </p>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="IPv4 vs IPv6 Delay Comparison"
+                          description="Comparative graph showing delay performance differences between IPv4 and IPv6 protocols."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png"
+                          documentType="image"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="IPv4 vs IPv6 Throughput Comparison"
+                          description="Throughput performance comparison between IPv4 and IPv6 across different packet sizes."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png"
+                          documentType="image"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="IPv4 Distribution Comparison"
+                          description="Performance comparison graphs for IPv4 across Ubuntu, Fedora, and Kali Linux distributions."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png"
+                          documentType="image"
+                        />
+                      </Col>
+                    </Row>
+                  </Tab>
 
-                  <h4>Fedora Configuration</h4>
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Fedora Sender Scripts"
-                        description="Network testing scripts for Fedora sender configuration including IPv4 and IPv6 testing."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/home/sender/ipv4.sh"
-                        documentType="code"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Fedora Network Configuration"
-                        description="Netplan configuration for Fedora testing environment network setup."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/etc/netplan/99-netplan.yaml"
-                        documentType="config"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Fedora USB Device Rules"
-                        description="USB device configuration rules for consistent network interface naming."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/etc/udev/rules.d/70-persistent-usb-tether.rules"
-                        documentType="config"
-                      />
-                    </Col>
-                  </Row>
+                  <Tab eventKey="configurations" title="System Configurations">
+                    <h3>Network Configuration Files</h3>
+                    <p>
+                      Complete system and network configuration files for all
+                      testing environments including time synchronisation,
+                      network interfaces, and device rules.
+                    </p>
 
-                  <h4>Kali Linux Configuration</h4>
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Kali Sender Configuration"
-                        description="Complete Kali Linux sender configuration including testing scripts and network setup."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/pc1/home/sender/config_files.sh"
-                        documentType="code"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Kali Router Configuration"
-                        description="Router configuration files for Kali Linux testing environment."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/router1/etc/chrony/chrony.conf"
-                        documentType="config"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Kali Network Interface Rules"
-                        description="Network interface configuration and device rules for Kali Linux environment."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/pc2/etc/netplan/99-netplan.yaml"
-                        documentType="config"
-                      />
-                    </Col>
-                  </Row>
-                </Tab>
+                    <h4>Ubuntu Configuration</h4>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Sender Configuration"
+                          description="Complete configuration setup for Ubuntu sender PC including network and automation scripts."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc1/home/sender/config_files.sh"
+                          documentType="code"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Receiver Log Export"
+                          description="Automated log export script for Ubuntu receiver configuration."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc2/home/receiver/export_logs.sh"
+                          documentType="code"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Chrony Configuration"
+                          description="Time synchronisation configuration for Ubuntu testing environment."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc1/etc/chrony/chrony.conf"
+                          documentType="config"
+                        />
+                      </Col>
+                    </Row>
 
-                <Tab eventKey="packages" title="Package Management">
-                  <h3>Automated Package Installation</h3>
-                  <p>
-                    Automated scripts for package installation and environment
-                    setup across different Linux distributions to ensure
-                    consistent testing environments.
-                  </p>
+                    <h4>Fedora Configuration</h4>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Fedora Sender Scripts"
+                          description="Network testing scripts for Fedora sender configuration including IPv4 and IPv6 testing."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/home/sender/ipv4.sh"
+                          documentType="code"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Fedora Network Configuration"
+                          description="Netplan configuration for Fedora testing environment network setup."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/etc/netplan/99-netplan.yaml"
+                          documentType="config"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Fedora USB Device Rules"
+                          description="USB device configuration rules for consistent network interface naming."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Fedora/pc1/etc/udev/rules.d/70-persistent-usb-tether.rules"
+                          documentType="config"
+                        />
+                      </Col>
+                    </Row>
 
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Package Installer"
-                        description="Automated script for installing all required packages and dependencies for Ubuntu testing environment."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Ubuntu/download_ubuntu_packages.sh"
-                        documentType="code"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Fedora Package Installer"
-                        description="Comprehensive package installation script for setting up Fedora testing environment with all required tools."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Fedora/download_fedora_packages.sh"
-                        documentType="code"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Kali Package Installer"
-                        description="Specialised package installation script for Kali Linux including security and networking tools required for testing."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Kali/download_kali_packages.sh"
-                        documentType="code"
-                      />
-                    </Col>
-                  </Row>
-                </Tab>
-              </Tabs>
-            </Col>
-          </Row>
-        </section>
+                    <h4>Kali Linux Configuration</h4>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Kali Sender Configuration"
+                          description="Complete Kali Linux sender configuration including testing scripts and network setup."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/pc1/home/sender/config_files.sh"
+                          documentType="code"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Kali Router Configuration"
+                          description="Router configuration files for Kali Linux testing environment."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/router1/etc/chrony/chrony.conf"
+                          documentType="config"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Kali Network Interface Rules"
+                          description="Network interface configuration and device rules for Kali Linux environment."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Kali/pc2/etc/netplan/99-netplan.yaml"
+                          documentType="config"
+                        />
+                      </Col>
+                    </Row>
+                  </Tab>
 
-        <section className="content-section">
-          <Row>
-            <Col>
-              <h2>Project Poster</h2>
-              <p>
-                Academic poster presentation summarising the project
-                methodology, findings, and outcomes for conference presentation
-                and project showcase.
-              </p>
+                  <Tab eventKey="packages" title="Package Management">
+                    <h3>Automated Package Installation</h3>
+                    <p>
+                      Automated scripts for package installation and environment
+                      setup across different Linux distributions to ensure
+                      consistent testing environments.
+                    </p>
 
-              <Row className="mb-4">
-                <Col md={6} className="mb-3">
-                  <DocumentCard
-                    title="Project Poster v3 (Final)"
-                    description="Final version of the academic poster presenting project methodology, results, and conclusions with all updates."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v3.png"
-                    documentType="image"
-                  />
-                </Col>
-                <Col md={6} className="mb-3">
-                  <DocumentCard
-                    title="QR Code"
-                    description="QR code linking to digital project resources and portfolio website for easy access."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/qr_code.svg"
-                    documentType="image"
-                  />
-                </Col>
-              </Row>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Package Installer"
+                          description="Automated script for installing all required packages and dependencies for Ubuntu testing environment."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Ubuntu/download_ubuntu_packages.sh"
+                          documentType="code"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Fedora Package Installer"
+                          description="Comprehensive package installation script for setting up Fedora testing environment with all required tools."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Fedora/download_fedora_packages.sh"
+                          documentType="code"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Kali Package Installer"
+                          description="Specialised package installation script for Kali Linux including security and networking tools required for testing."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Kali/download_kali_packages.sh"
+                          documentType="code"
+                        />
+                      </Col>
+                    </Row>
+                  </Tab>
+                </Tabs>
+              </Col>
+            </Row>
+          </section>
 
-              <h3>Poster Version History</h3>
-              <Row className="mb-4">
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Project Poster v2"
-                    description="Second iteration of the project poster with refined content and improved design."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v2.png"
-                    documentType="image"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Project Poster v1"
-                    description="Initial version of the project poster showing early design and content organisation."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v1.png"
-                    documentType="image"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="AUT Logo"
-                    description="Official Auckland University of Technology logo for poster branding and institutional identification."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/AUT-logo-black.jpg"
-                    documentType="image"
-                  />
-                </Col>
-              </Row>
+          <section className="content-section">
+            <Row>
+              <Col>
+                <h2>Project Poster</h2>
+                <p>
+                  Academic poster presentation summarising the project
+                  methodology, findings, and outcomes for conference
+                  presentation and project showcase.
+                </p>
 
-              <h3>Poster Content Sections</h3>
-              <p>
-                Individual sections that comprise the complete poster
-                presentation, detailing different aspects of the project.
-              </p>
+                <Row className="mb-4">
+                  <Col md={6} className="mb-3">
+                    <DocumentCard
+                      title="Project Poster v4 (Final)"
+                      description="Final version of the academic poster presenting project methodology, results, and conclusions with all updates."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v4.png"
+                      documentType="image"
+                    />
+                  </Col>
+                  <Col md={6} className="mb-3">
+                    <DocumentCard
+                      title="QR Code"
+                      description="QR code linking to digital project resources and portfolio website for easy access."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/qr_code.svg"
+                      documentType="image"
+                    />
+                  </Col>
+                </Row>
 
-              <Row className="mb-4">
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Background"
-                    description="Project background and context setting the foundation for the network performance evaluation study."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/01 Background.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Rationale"
-                    description="Justification and reasoning behind the project approach and methodology selection."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/02 Rationale.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Objectives"
-                    description="Clear project objectives and goals defining the scope and expected outcomes."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/03 Objectives.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Project Impact"
-                    description="Analysis of project impact and significance within the field of network performance evaluation."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/04 Project Impact.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Goals"
-                    description="Specific project goals and measurable outcomes targeted for achievement."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/05 Goals.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Project Management Methodology"
-                    description="Description of project management approach and methodologies employed throughout the project lifecycle."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/06 Project Management Methodology.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Artefacts"
-                    description="Overview of key project deliverables and artifacts produced during the development process."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/07 Artefacts.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Quality Assurance"
-                    description="Quality assurance processes and procedures ensuring project reliability and accuracy."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/08 Quality Assurance.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Key Challenges"
-                    description="Identification and analysis of major challenges encountered during project execution."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/09 Key Challenges.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Lessons Learnt"
-                    description="Key insights and lessons learned throughout the project development and testing phases."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/10 Lessons Learnt.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="References"
-                    description="Academic references and sources supporting the project methodology and findings."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/11 References.docx"
-                  />
-                </Col>
-                <Col md={4} className="mb-3">
-                  <DocumentCard
-                    title="Acknowledgements"
-                    description="Recognition of contributors, supporters, and resources that facilitated project completion."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/12 Acknowledgements.docx"
-                  />
-                </Col>
-              </Row>
+                <h3>Poster Version History</h3>
+                <Row className="mb-4">
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Project Poster v3"
+                      description="Third iteration of the project poster with further refinements and updated content."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v3.png"
+                      documentType="image"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Project Poster v2"
+                      description="Second iteration of the project poster with refined content and improved design."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v2.png"
+                      documentType="image"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Project Poster v1"
+                      description="Initial version of the project poster showing early design and content organisation."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v1.png"
+                      documentType="image"
+                    />
+                  </Col>
+                </Row>
 
-              <h3>Supporting Materials</h3>
-              <Row className="mb-4">
-                <Col md={6} className="mb-3">
-                  <DocumentCard
-                    title="QR Code"
-                    description="QR code linking to digital project resources and portfolio website for easy access."
-                    documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/qr_code.svg"
-                    documentType="image"
-                  />
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </section>
+                <h3>Poster Content Sections</h3>
+                <p>
+                  Individual sections that comprise the complete poster
+                  presentation, detailing different aspects of the project.
+                </p>
 
-        <section className="content-section">
-          <Row>
-            <Col>
-              <h2>Quality Assurance Documentation</h2>
-              <p>
-                Comprehensive quality assurance processes and documentation to
-                ensure project reliability, accuracy, and adherence to best
-                practices.
-              </p>
+                <Row className="mb-4">
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Background"
+                      description="Project background and context setting the foundation for the network performance evaluation study."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/01 Background.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Rationale"
+                      description="Justification and reasoning behind the project approach and methodology selection."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/02 Rationale.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Objectives"
+                      description="Clear project objectives and goals defining the scope and expected outcomes."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/03 Objectives.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Project Impact"
+                      description="Analysis of project impact and significance within the field of network performance evaluation."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/04 Project Impact.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Goals"
+                      description="Specific project goals and measurable outcomes targeted for achievement."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/05 Goals.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Project Management Methodology"
+                      description="Description of project management approach and methodologies employed throughout the project lifecycle."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/06 Project Management Methodology.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Artefacts"
+                      description="Overview of key project deliverables and artifacts produced during the development process."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/07 Artefacts.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Quality Assurance"
+                      description="Quality assurance processes and procedures ensuring project reliability and accuracy."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/08 Quality Assurance.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Key Challenges"
+                      description="Identification and analysis of major challenges encountered during project execution."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/09 Key Challenges.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Lessons Learnt"
+                      description="Key insights and lessons learned throughout the project development and testing phases."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/10 Lessons Learnt.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="References"
+                      description="Academic references and sources supporting the project methodology and findings."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/11 References.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Acknowledgements"
+                      description="Recognition of contributors, supporters, and resources that facilitated project completion."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/12 Acknowledgements.docx"
+                    />
+                  </Col>
+                </Row>
 
-              <Tabs defaultActiveKey="qa-reports" id="qa-tabs" className="mb-4">
-                <Tab eventKey="qa-reports" title="QA Reports">
-                  <h3>Quality Assurance Reports</h3>
-                  <p>
-                    Comprehensive quality assurance reporting and metrics
-                    tracking project quality standards and process compliance.
-                  </p>
+                <h3>Supporting Materials</h3>
+                <Row className="mb-4">
+                  <Col md={6} className="mb-3">
+                    <DocumentCard
+                      title="QR Code"
+                      description="QR code linking to digital project resources and portfolio website for easy access."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/qr_code.svg"
+                      documentType="image"
+                    />
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </section>
 
-                  <Row className="mb-4">
-                    <Col md={6} className="mb-3">
-                      <DocumentCard
-                        title="QA Metric Report"
-                        description="Comprehensive quality assurance metrics report documenting testing coverage, defect rates, and quality indicators."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/QA Metric Report.docx"
-                      />
-                    </Col>
-                    <Col md={6} className="mb-3">
-                      <DocumentCard
-                        title="QA Phase Entry-Exit Log"
-                        description="Detailed log documenting quality assurance phase entry and exit criteria, ensuring systematic QA process execution."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/QA Phase Entry-Exit Log.docx"
-                      />
-                    </Col>
-                  </Row>
+          <section className="content-section">
+            <Row>
+              <Col>
+                <h2>Quality Assurance Documentation</h2>
+                <p>
+                  Comprehensive quality assurance processes and documentation to
+                  ensure project reliability, accuracy, and adherence to best
+                  practices.
+                </p>
 
-                  <h4>Completed QA Checklists</h4>
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Completed Ubuntu Checklists"
-                        description="Collection of all completed quality assurance checklists for Ubuntu configuration and testing."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Ubuntu Checklists.pdf"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Completed Fedora Checklists"
-                        description="Comprehensive set of completed quality assurance checklists for Fedora environment setup and validation."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Fedora Checklists.pdf"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Completed Kali Checklists"
-                        description="Full collection of completed quality assurance checklists for Kali Linux configuration and testing verification."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Kali Checklists.pdf"
-                      />
-                    </Col>
-                  </Row>
-                </Tab>
+                <Tabs
+                  defaultActiveKey="qa-reports"
+                  id="qa-tabs"
+                  className="mb-4"
+                >
+                  <Tab eventKey="qa-reports" title="QA Reports">
+                    <h3>Quality Assurance Reports</h3>
+                    <p>
+                      Comprehensive quality assurance reporting and metrics
+                      tracking project quality standards and process compliance.
+                    </p>
 
-                <Tab eventKey="peer-review" title="Peer Review">
-                  <h3>Peer Review Checklists</h3>
-                  <p>
-                    Systematic peer review documentation ensuring configuration
-                    accuracy and methodology consistency across all Linux
-                    distributions.
-                  </p>
+                    <Row className="mb-4">
+                      <Col md={6} className="mb-3">
+                        <DocumentCard
+                          title="QA Metric Report"
+                          description="Comprehensive quality assurance metrics report documenting testing coverage, defect rates, and quality indicators."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/QA Metric Report.docx"
+                        />
+                      </Col>
+                      <Col md={6} className="mb-3">
+                        <DocumentCard
+                          title="QA Phase Entry-Exit Log"
+                          description="Detailed log documenting quality assurance phase entry and exit criteria, ensuring systematic QA process execution."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/QA Phase Entry-Exit Log.docx"
+                        />
+                      </Col>
+                    </Row>
 
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Configuration Peer Review"
-                        description="Comprehensive peer review checklist for Ubuntu router configuration verification and validation."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Peer Review Checklist - Ubuntu Configuration v1.1.pdf"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Fedora Configuration Peer Review"
-                        description="Detailed peer review documentation for Fedora router setup and configuration validation."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Peer Review Checklist - Fedora Configuration v1.0.pdf"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Kali Configuration Peer Review"
-                        description="Systematic review checklist for Kali Linux router configuration and testing setup verification."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Peer Review Checklist - Kali Configuration v1.0.pdf"
-                      />
-                    </Col>
-                  </Row>
-                </Tab>
+                    <h4>Completed QA Checklists</h4>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Completed Ubuntu Checklists"
+                          description="Collection of all completed quality assurance checklists for Ubuntu configuration and testing."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Ubuntu Checklists.pdf"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Completed Fedora Checklists"
+                          description="Comprehensive set of completed quality assurance checklists for Fedora environment setup and validation."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Fedora Checklists.pdf"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Completed Kali Checklists"
+                          description="Full collection of completed quality assurance checklists for Kali Linux configuration and testing verification."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Completed Checklists/Completed Kali Checklists.pdf"
+                        />
+                      </Col>
+                    </Row>
+                  </Tab>
 
-                <Tab eventKey="router-config" title="Router Configuration">
-                  <h3>Router Configuration Checklists</h3>
-                  <p>
-                    Standardised configuration checklists ensuring consistent
-                    router setup across all Linux distributions for reliable
-                    performance testing.
-                  </p>
+                  <Tab eventKey="peer-review" title="Peer Review">
+                    <h3>Peer Review Checklists</h3>
+                    <p>
+                      Systematic peer review documentation ensuring
+                      configuration accuracy and methodology consistency across
+                      all Linux distributions.
+                    </p>
 
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Router Configuration"
-                        description="Step-by-step configuration checklist for Ubuntu router setup including network interface configuration and routing table setup."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Router Configuration Checklist - Ubuntu v1.1.pdf"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Fedora Router Configuration"
-                        description="Comprehensive configuration guide for Fedora router setup with detailed network configuration steps."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Router Configuration Checklist - Fedora v1.0.pdf"
-                      />
-                    </Col>
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Kali Router Configuration"
-                        description="Specialised configuration checklist for Kali Linux router setup and network interface management."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Router Configuration Checklist - Kali v1.0.pdf"
-                      />
-                    </Col>
-                  </Row>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Configuration Peer Review"
+                          description="Comprehensive peer review checklist for Ubuntu router configuration verification and validation."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Peer Review Checklist - Ubuntu Configuration v1.1.pdf"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Fedora Configuration Peer Review"
+                          description="Detailed peer review documentation for Fedora router setup and configuration validation."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Peer Review Checklist - Fedora Configuration v1.0.pdf"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Kali Configuration Peer Review"
+                          description="Systematic review checklist for Kali Linux router configuration and testing setup verification."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Peer Review Checklist - Kali Configuration v1.0.pdf"
+                        />
+                      </Col>
+                    </Row>
+                  </Tab>
 
-                  <h4>Version History</h4>
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Router Config v1.0"
-                        description="Initial version of Ubuntu router configuration checklist showing the evolution of QA processes."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Version-History/Router Configuration Checklist - Ubuntu v1.0.pdf"
-                      />
-                    </Col>
-                  </Row>
+                  <Tab eventKey="router-config" title="Router Configuration">
+                    <h3>Router Configuration Checklists</h3>
+                    <p>
+                      Standardised configuration checklists ensuring consistent
+                      router setup across all Linux distributions for reliable
+                      performance testing.
+                    </p>
 
-                  <h4>Peer Review Version History</h4>
-                  <Row className="mb-4">
-                    <Col md={4} className="mb-3">
-                      <DocumentCard
-                        title="Ubuntu Peer Review v1.0"
-                        description="Initial version of Ubuntu configuration peer review checklist showing QA process development."
-                        documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Version-History/Peer Review Checklist - Ubuntu Configuration v1.0.pdf"
-                      />
-                    </Col>
-                  </Row>
-                </Tab>
-              </Tabs>
-            </Col>
-          </Row>
-        </section>
-      </Container>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Router Configuration"
+                          description="Step-by-step configuration checklist for Ubuntu router setup including network interface configuration and routing table setup."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Router Configuration Checklist - Ubuntu v1.1.pdf"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Fedora Router Configuration"
+                          description="Comprehensive configuration guide for Fedora router setup with detailed network configuration steps."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Router Configuration Checklist - Fedora v1.0.pdf"
+                        />
+                      </Col>
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Kali Router Configuration"
+                          description="Specialised configuration checklist for Kali Linux router setup and network interface management."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Router Configuration Checklist - Kali v1.0.pdf"
+                        />
+                      </Col>
+                    </Row>
 
-      {/* ImageLightbox for zooming graphs */}
-      <ImageLightbox
-        isOpen={showImageLightbox}
-        onClose={() => setShowImageLightbox(false)}
-        imageUrl={currentImage.src}
-        altText={currentImage.title}
-      />
-    </main>
+                    <h4>Version History</h4>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Router Config v1.0"
+                          description="Initial version of Ubuntu router configuration checklist showing the evolution of QA processes."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Version-History/Router Configuration Checklist - Ubuntu v1.0.pdf"
+                        />
+                      </Col>
+                    </Row>
+
+                    <h4>Peer Review Version History</h4>
+                    <Row className="mb-4">
+                      <Col md={4} className="mb-3">
+                        <DocumentCard
+                          title="Ubuntu Peer Review v1.0"
+                          description="Initial version of Ubuntu configuration peer review checklist showing QA process development."
+                          documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Peer Review/Version-History/Peer Review Checklist - Ubuntu Configuration v1.0.pdf"
+                        />
+                      </Col>
+                    </Row>
+                  </Tab>
+                </Tabs>
+              </Col>
+            </Row>
+          </section>
+        </Container>
+      </main>
+
+      {/* ImageLightbox for zooming graphs - moved outside main for full overlay */}
+      {showImageLightbox &&
+        ReactDOM.createPortal(
+          <ImageLightbox
+            isOpen={showImageLightbox}
+            onClose={() => setShowImageLightbox(false)}
+            imageUrl={currentImage.src}
+            altText={currentImage.title}
+          />,
+          document.body
+        )}
+    </>
   );
 }
 
