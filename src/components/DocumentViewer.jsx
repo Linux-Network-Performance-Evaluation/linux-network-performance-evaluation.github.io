@@ -11,12 +11,17 @@ const documentStyles = `
     font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
   }
   
   .docx-content {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 2rem;
+    overflow-x: auto;
+    box-sizing: border-box;
   }
   
   .document-content h1, .document-content h2, .document-content h3, 
@@ -39,10 +44,14 @@ const documentStyles = `
   
   .document-content table {
     width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
     font-size: 0.9rem;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    table-layout: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
   
   .document-content table td, .document-content table th {
@@ -50,6 +59,10 @@ const documentStyles = `
     padding: 0.75rem 0.5rem;
     text-align: left;
     vertical-align: top;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 0;
+    min-width: 50px;
   }
   
   .document-content table th {
@@ -222,8 +235,8 @@ export function DocumentCard({
         console.warn("Mammoth warnings:", result.messages);
       }
 
-      // Wrap content in a container for better styling
-      const wrappedContent = `<div class="docx-content">${result.value}</div>`;
+      // Wrap content in a container for better styling and overflow handling
+      const wrappedContent = `<div class="docx-content"><div style="overflow-x: auto; max-width: 100%;">${result.value}</div></div>`;
       setDocumentContent(wrappedContent);
       setViewMode("native");
     } catch (error) {
@@ -486,7 +499,7 @@ export function DocumentCard({
           </div>
         )}
       </Modal.Header>
-      <Modal.Body style={{ padding: 0, height: "80vh" }}>
+      <Modal.Body style={{ padding: 0, height: "80vh", overflow: "hidden" }}>
         {isLoading ? (
           <div className="d-flex justify-content-center align-items-center h-100">
             <div className="text-center">
@@ -497,7 +510,7 @@ export function DocumentCard({
             </div>
           </div>
         ) : loadError ? (
-          <div className="p-4">
+          <div className="p-4" style={{ overflow: "auto", height: "100%" }}>
             <Alert variant="danger">
               <Alert.Heading>Error Loading Document</Alert.Heading>
               <p>{loadError}</p>
@@ -560,16 +573,29 @@ export function DocumentCard({
 
   return (
     <>
-      <div className={`card h-100 ${className}`} style={{ minHeight: "250px" }}>
+      <div className={`card h-100 ${className}`} style={{ minHeight: "300px" }}>
         <div className="card-body d-flex flex-column">
-          <div className="d-flex justify-content-between align-items-start mb-2">
-            <h5 className="card-title mb-0">{title}</h5>
-            <Badge bg="secondary" className="ms-2 flex-shrink-0">
+          <div className="mb-2">
+            <h5 className="card-title mb-1">{title}</h5>
+            <Badge bg="secondary" className="d-inline-block">
               {fileTypeDisplay}
             </Badge>
           </div>
-          <div className="flex-grow-1">
-            <p className="card-text">{description}</p>
+          <div className="flex-grow-1" style={{ overflow: "hidden" }}>
+            <p
+              className="card-text"
+              style={{
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                display: "-webkit-box",
+                WebkitLineClamp: 4,
+                WebkitBoxOrient: "vertical",
+                lineHeight: "1.4em",
+                maxHeight: "5.6em",
+              }}
+            >
+              {description}
+            </p>
 
             {/* Image preview for image files */}
             {docType === "image" && (
