@@ -479,35 +479,6 @@ export function DocumentCard({
     >
       <Modal.Header closeButton>
         <Modal.Title>{currentDocument.title}</Modal.Title>
-        {hasNativeSupport && (
-          <div className="ms-auto me-3">
-            <small className="text-muted me-2">
-              {viewMode === "native" ? "📊 Optimised View" : "🌐 Online View"}
-            </small>
-            <Button
-              variant="outline-secondary"
-              size="sm"
-              onClick={() => {
-                if (viewMode === "native") {
-                  // Switch to Office Online
-                  setViewMode("office");
-                  setDocumentContent("");
-                } else {
-                  // Switch to Native
-                  if (currentDocument.type === "word") {
-                    loadDocxFile(currentDocument.url);
-                  } else if (currentDocument.type === "excel") {
-                    loadXlsxFile(currentDocument.url);
-                  }
-                }
-              }}
-            >
-              {viewMode === "native"
-                ? "Switch to Online"
-                : "Switch to Optimised"}
-            </Button>
-          </div>
-        )}
       </Modal.Header>
       <Modal.Body style={{ padding: 0, height: "80vh", overflow: "hidden" }}>
         {isLoading ? (
