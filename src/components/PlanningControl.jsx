@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Tabs, Tab } from "react-bootstrap";
+import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 import { DocumentCard } from "./DocumentViewer";
 
 function PlanningControl() {
@@ -29,14 +29,14 @@ function PlanningControl() {
                   <DocumentCard
                     title="Project Proposal v2.5 (Latest)"
                     description="The most recent version of our project proposal document with final updates and refinements."
-                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.5.docx"
+                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.5.pdf"
                   />
                 </Col>
                 <Col md={6} className="mb-3">
                   <DocumentCard
-                    title="Project Proposal v2.4 (PDF)"
-                    description="PDF version of the comprehensive project proposal document containing detailed objectives, methodology, and timeline."
-                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.4.pdf"
+                    title="Project Proposal v2.5 (Latest)"
+                    description="The most recent version of our project proposal document with final updates and refinements."
+                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.5.docx"
                   />
                 </Col>
               </Row>
@@ -44,15 +44,22 @@ function PlanningControl() {
               <Row className="mb-4">
                 <Col md={6} className="mb-3">
                   <DocumentCard
+                    title="Project Proposal v2.4 (PDF)"
+                    description="PDF version of the comprehensive project proposal document containing detailed objectives, methodology, and timeline."
+                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Version-History/Proposal_v2.4.pdf"
+                  />
+                </Col>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
                     title="Project Proposal v2.4 (Word)"
                     description="Word version of the proposal document for editing and collaboration capabilities."
-                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Proposal_v2.4.docx"
+                    documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Document/Version-History/Proposal_v2.4.docx"
                   />
                 </Col>
                 <Col md={6} className="mb-3">
                   <DocumentCard
                     title="Proposal Presentation"
-                    description="PowerPoint presentation summarizing our project proposal and key deliverables."
+                    description="PowerPoint presentation summarising our project proposal and key deliverables."
                     documentPath="/Portfolio/02-Planning-and-Control/Proposal/Proposal-Presentation/Proposal Powerpoint.pptx"
                   />
                 </Col>
@@ -111,7 +118,7 @@ function PlanningControl() {
                     <Col md={6} className="mb-3">
                       <DocumentCard
                         title="Work Breakdown Structure"
-                        description="Detailed breakdown of project tasks and deliverables organized in a hierarchical structure."
+                        description="Detailed breakdown of project tasks and deliverables organised in a hierarchical structure."
                         documentPath="/Portfolio/02-Planning-and-Control/Proposal/Planning-Documents/Current/08. Work Breakdown Structure v3.1.docx"
                       />
                     </Col>
@@ -208,7 +215,7 @@ function PlanningControl() {
                 <Col md={6} className="mb-3">
                   <DocumentCard
                     title="Status Report Presentation"
-                    description="PowerPoint presentation summarizing mid-term project status, key findings, and next steps."
+                    description="PowerPoint presentation summarising mid-term project status, key findings, and next steps."
                     documentPath="/Portfolio/02-Planning-and-Control/Mid-Term Review/Status Report.pptx"
                   />
                 </Col>
@@ -286,7 +293,7 @@ function PlanningControl() {
                     <Col md={6} className="mb-3">
                       <DocumentCard
                         title="Project Charter"
-                        description="Formal project authorization document defining objectives, scope, and authority."
+                        description="Formal project authorisation document defining objectives, scope, and authority."
                         documentPath="/Portfolio/02-Planning-and-Control/Proposal/Planning-Documents/Version-History/v1.0-Initial-Proposal/10. Project Charter.docx"
                       />
                     </Col>
