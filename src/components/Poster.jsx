@@ -18,31 +18,24 @@ function Poster() {
           <Row className="justify-content-center">
             <Col lg={10} xl={8}>
               <div className="poster-container text-center">
-                <a
-                  href="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v3.png"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="d-inline-block"
-                >
-                  <img
-                    src="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v3.png"
-                    alt="Linux Network Performance Evaluation Research Poster"
-                    className="poster img-fluid shadow-lg rounded"
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      cursor: "pointer",
-                      transition: "transform 0.3s ease",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.transform = "scale(1.02)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.transform = "scale(1)")
-                    }
-                  />
-                </a>
-                <p className="mt-3 text-muted">
+                <img
+                  src="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v4.png"
+                  alt="Linux Network Performance Evaluation Research Poster"
+                  className="poster img-fluid shadow-lg rounded"
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    cursor: "pointer",
+                    transition: "transform 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.target.style.transform = "scale(1.02)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.target.style.transform = "scale(1)")
+                  }
+                />
+                <p className="mt-3 text-muted text-center">
                   <small>Click to open in new tab for full resolution</small>
                 </p>
               </div>
