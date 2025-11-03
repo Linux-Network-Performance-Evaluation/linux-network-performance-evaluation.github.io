@@ -2,13 +2,13 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 
 function Home() {
   const teamMembers = [
-    "Thomas Robinson",
-    "Win Phyo",
-    "Nathan Quai Hoi",
-    "Zafar Azad",
-    "Larissa Goh",
-    "Charmi Patel",
-    "Kylie Afable",
+    { name: "Thomas Robinson", url: "https://github.com/TankedThomas" },
+    { name: "Win Phyo", url: "https://github.com/cyber-wpmm" },
+    { name: "Nathan Quai Hoi", url: "https://github.com/OPSTARGAMER" },
+    { name: "Zafar Azad", url: "" },
+    { name: "Larissa Goh", url: "https://github.com/larissagoh" },
+    { name: "Charmi Patel", url: "https://github.com/charrrrmi" },
+    { name: "Kylie Afable", url: "https://github.com/kylieafablee" },
   ];
 
   return (
@@ -133,9 +133,15 @@ function Home() {
               <h2 className="text-center mb-4">Team Members</h2>
               <div className="team-grid">
                 {teamMembers.map((member, index) => (
-                  <div key={index} className="team-member">
-                    {member}
-                  </div>
+                  <a
+                    key={index}
+                    className="team-member"
+                    href={member.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {member.name}
+                  </a>
                 ))}
               </div>
             </Col>
