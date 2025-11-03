@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Tabs, Tab } from "react-bootstrap";
+import { Card, Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 import { DocumentCard } from "./DocumentViewer";
 
 function CommunicationTeamwork() {
@@ -92,20 +92,6 @@ function CommunicationTeamwork() {
                     title="Client Feedback Form (Signed)"
                     description="Completed and signed client feedback form with official project evaluation."
                     documentPath="/Portfolio/03-Communication-and-Teamwork/Client Feedback Form_signed.pdf"
-                  />
-                </Col>
-                <Col md={6} className="mb-3">
-                  <DocumentCard
-                    title="Group Details"
-                    description="Team composition, contact information, and role assignments for the project."
-                    documentPath="/Portfolio/03-Communication-and-Teamwork/Group Details.xlsx"
-                  />
-                </Col>
-                <Col md={6} className="mb-3">
-                  <DocumentCard
-                    title="Project Timetables"
-                    description="Detailed scheduling and timeline information for project milestones and activities."
-                    documentPath="/Portfolio/03-Communication-and-Teamwork/Timetables.xlsx"
                   />
                 </Col>
               </Row>
