@@ -384,8 +384,8 @@ function DevelopmentQA() {
                   {data.unit === "bps"
                     ? "bits per second"
                     : data.unit === "%"
-                      ? "percentage"
-                      : "milliseconds"}
+                    ? "percentage"
+                    : "milliseconds"}
                 </small>
               </div>
               <div className="table-container">
@@ -396,8 +396,9 @@ function DevelopmentQA() {
                         {data.headers.map((header, index) => (
                           <th
                             key={index}
-                            className={`text-center ${header.includes("UDP") ? "udp-header" : ""
-                              }`}
+                            className={`text-center ${
+                              header.includes("UDP") ? "udp-header" : ""
+                            }`}
                           >
                             {index === 0 ? (
                               header
@@ -423,8 +424,9 @@ function DevelopmentQA() {
                             return (
                               <td
                                 key={cellIndex}
-                                className={`text-center ${isUdpColumn ? "udp-cell" : ""
-                                  }`}
+                                className={`text-center ${
+                                  isUdpColumn ? "udp-cell" : ""
+                                }`}
                               >
                                 {cellIndex === 0
                                   ? cell

@@ -215,7 +215,7 @@ export function DocumentCard({
         </div>
       </div>
       <ViewerModal />
-      
+
       {/* ImageLightbox component for images */}
       <ImageLightbox
         isOpen={showImageLightbox}

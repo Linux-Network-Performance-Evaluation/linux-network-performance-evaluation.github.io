@@ -154,7 +154,7 @@ function ResearchUpskilling() {
                 Our research focused on understanding the performance
                 characteristics of different Linux distributions when used as
                 software routers. We conducted comprehensive literature reviews
-                and analyzed existing benchmarking methodologies.
+                and analysed existing benchmarking methodologies.
               </p>
 
               <h2>Upskilling Areas</h2>

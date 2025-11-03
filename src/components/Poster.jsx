@@ -24,7 +24,8 @@ function Poster() {
             <Col>
               <h1 className="text-center mb-4">Project Poster</h1>
               <p className="text-center mb-4">
-                This poster summarises our research, methodology, results, and conclusions.
+                This poster summarises our research, methodology, results, and
+                conclusions.
               </p>
             </Col>
           </Row>
@@ -46,9 +47,7 @@ function Poster() {
                   onMouseEnter={(e) =>
                     (e.target.style.transform = "scale(1.02)")
                   }
-                  onMouseLeave={(e) =>
-                    (e.target.style.transform = "scale(1)")
-                  }
+                  onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
                   onClick={openLightbox}
                 />
                 <p className="mt-3 text-muted text-align text-center">
