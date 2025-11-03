@@ -160,7 +160,7 @@ function ResearchUpskilling() {
               <h2>Upskilling Areas</h2>
               <ul>
                 <li>Linux system administration and configuration</li>
-                <li>Network performance testing tools (D-ITG, iPerf)</li>
+                <li>Network performance testing tools (D-ITG)</li>
                 <li>Software router configuration</li>
                 <li>Statistical analysis and data interpretation</li>
                 <li>QEMU virtualisation technologies</li>

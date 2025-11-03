@@ -1,16 +1,16 @@
+import { useState } from "react";
 import {
-  Container,
-  Row,
-  Col,
-  Card,
   Badge,
+  Button,
+  Card,
+  Col,
+  Container,
+  Modal,
+  Row,
+  Tab,
   Table,
   Tabs,
-  Tab,
-  Modal,
-  Button,
 } from "react-bootstrap";
-import { useState } from "react";
 import { DocumentCard } from "./DocumentViewer";
 
 function DevelopmentQA() {
@@ -21,7 +21,6 @@ function DevelopmentQA() {
   const technologies = [
     "Linux (Fedora, Ubuntu, Kali)",
     "D-ITG Traffic Generator",
-    "iPerf Network Testing",
     "QEMU Virtualisation",
     "Python Scripting",
     "Network Configuration",
@@ -385,8 +384,8 @@ function DevelopmentQA() {
                   {data.unit === "bps"
                     ? "bits per second"
                     : data.unit === "%"
-                    ? "percentage"
-                    : "milliseconds"}
+                      ? "percentage"
+                      : "milliseconds"}
                 </small>
               </div>
               <div className="table-container">
@@ -397,9 +396,8 @@ function DevelopmentQA() {
                         {data.headers.map((header, index) => (
                           <th
                             key={index}
-                            className={`text-center ${
-                              header.includes("UDP") ? "udp-header" : ""
-                            }`}
+                            className={`text-center ${header.includes("UDP") ? "udp-header" : ""
+                              }`}
                           >
                             {index === 0 ? (
                               header
@@ -425,9 +423,8 @@ function DevelopmentQA() {
                             return (
                               <td
                                 key={cellIndex}
-                                className={`text-center ${
-                                  isUdpColumn ? "udp-cell" : ""
-                                }`}
+                                className={`text-center ${isUdpColumn ? "udp-cell" : ""
+                                  }`}
                               >
                                 {cellIndex === 0
                                   ? cell
@@ -975,7 +972,7 @@ function DevelopmentQA() {
                         <li>95% confidence interval measurements</li>
                         <li>Multiple test runs for statistical significance</li>
                         <li>Controlled physical network environment</li>
-                        <li>D-ITG and iPerf testing tools</li>
+                        <li>D-ITG and testing tools</li>
                       </ul>
                     </Card.Body>
                   </Card>
