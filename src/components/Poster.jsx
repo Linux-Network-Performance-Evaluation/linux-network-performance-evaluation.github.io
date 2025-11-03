@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import ImageLightbox from "./ImageLightbox";
 
 function Poster() {
-  // Step 1: Create a state variable to track if lightbox is open
+  // State variable to track if lightbox is open
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
-  // Step 2: Function to open the lightbox
+  // Function to open the lightbox
   const openLightbox = () => {
     setIsLightboxOpen(true);
   };
 
-  // Step 3: Function to close the lightbox
+  // Function to close the lightbox
   const closeLightbox = () => {
     setIsLightboxOpen(false);
   };
@@ -31,7 +32,7 @@ function Poster() {
           <Row className="justify-content-center">
             <Col lg={10} xl={8}>
               <div className="poster-container text-center">
-                {/* Step 4: Add onClick handler to image */}
+                {/* Add onClick handler to image */}
                 <img
                   src="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v4.png"
                   alt="Linux Network Performance Evaluation Research Poster"
@@ -89,57 +90,13 @@ function Poster() {
         </section>
       </Container>
 
-      {/* Step 5: Lightbox overlay - only shows when isLightboxOpen is true */}
-      {isLightboxOpen && (
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.9)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 9999,
-            cursor: "pointer",
-          }}
-          onClick={closeLightbox}
-        >
-          {/* Close button */}
-          <button
-            style={{
-              position: "absolute",
-              top: "20px",
-              right: "30px",
-              backgroundColor: "transparent",
-              border: "none",
-              color: "white",
-              fontSize: "40px",
-              fontWeight: "bold",
-              cursor: "pointer",
-              zIndex: 10000,
-            }}
-            onClick={closeLightbox}
-            aria-label="Close lightbox"
-          >
-            &times;
-          </button>
-
-          {/* Full-size image */}
-          <img
-            src="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v4.png"
-            alt="Linux Network Performance Evaluation Research Poster - Full Size"
-            style={{
-              maxWidth: "95%",
-              maxHeight: "95%",
-              objectFit: "contain",
-            }}
-            onClick={(e) => e.stopPropagation()}
-          />
-        </div>
-      )}
+      {/* ImageLightbox component */}
+      <ImageLightbox
+        isOpen={isLightboxOpen}
+        onClose={closeLightbox}
+        imageUrl="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v4.png"
+        altText="Linux Network Performance Evaluation Research Poster - Full Size"
+      />
     </main>
   );
 }

@@ -5,17 +5,17 @@ import {
   Card,
   Col,
   Container,
-  Modal,
   Row,
   Tab,
   Table,
   Tabs,
 } from "react-bootstrap";
 import { DocumentCard } from "./DocumentViewer";
+import ImageLightbox from "./ImageLightbox";
 
 function DevelopmentQA() {
   const [activeKey, setActiveKey] = useState("ipv4");
-  const [showImageModal, setShowImageModal] = useState(false);
+  const [showImageLightbox, setShowImageLightbox] = useState(false);
   const [currentImage, setCurrentImage] = useState({ src: "", title: "" });
 
   const technologies = [
@@ -366,7 +366,7 @@ function DevelopmentQA() {
   // Function to handle image clicks
   const handleImageClick = (imageSrc, imageTitle) => {
     setCurrentImage({ src: imageSrc, title: imageTitle });
-    setShowImageModal(true);
+    setShowImageLightbox(true);
   };
 
   const renderDataTable = (datasets, title) => {
@@ -1608,40 +1608,13 @@ function DevelopmentQA() {
         </section>
       </Container>
 
-      {/* Image Modal for zooming */}
-      <Modal
-        show={showImageModal}
-        onHide={() => setShowImageModal(false)}
-        size="xl"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{currentImage.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body style={{ padding: "20px" }}>
-          <div className="text-center">
-            <img
-              src={currentImage.src}
-              alt={currentImage.title}
-              className="img-fluid"
-              style={{ maxWidth: "100%", height: "auto", maxHeight: "70vh" }}
-            />
-          </div>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowImageModal(false)}>
-            Close
-          </Button>
-          <Button
-            variant="primary"
-            href={currentImage.src}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open in New Tab
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      {/* ImageLightbox for zooming graphs */}
+      <ImageLightbox
+        isOpen={showImageLightbox}
+        onClose={() => setShowImageLightbox(false)}
+        imageUrl={currentImage.src}
+        altText={currentImage.title}
+      />
     </main>
   );
 }

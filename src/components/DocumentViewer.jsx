@@ -1,5 +1,6 @@
 import { Modal, Button, Badge } from "react-bootstrap";
 import { useState } from "react";
+import ImageLightbox from "./ImageLightbox";
 
 // Document Card Component for consistent styling
 export function DocumentCard({
@@ -10,6 +11,7 @@ export function DocumentCard({
   className = "",
 }) {
   const [showViewer, setShowViewer] = useState(false);
+  const [showImageLightbox, setShowImageLightbox] = useState(false);
   const [currentDocument, setCurrentDocument] = useState({
     url: "",
     title: "",
@@ -39,12 +41,16 @@ export function DocumentCard({
 
   // Function to open document viewer
   const openDocumentViewer = (documentPath, title, type) => {
+    if (type === "image") {
+      // Use the new ImageLightbox for images
+      setShowImageLightbox(true);
+      return;
+    }
+
     let viewerUrl;
 
     if (type === "pdf") {
       viewerUrl = documentPath; // Direct PDF viewing
-    } else if (type === "image") {
-      viewerUrl = documentPath; // Direct image viewing
     } else {
       viewerUrl = getOfficeViewerUrl(documentPath, type);
     }
@@ -113,7 +119,7 @@ export function DocumentCard({
   };
 
   const docType = documentType || getDocumentType(documentPath);
-  const canViewInline = docType === "pdf"; // Only PDFs can be viewed inline
+  const canViewInline = docType === "pdf" || docType === "image"; // PDFs and images can be viewed inline
   const fileTypeDisplay = getFileTypeDisplay(docType, documentPath);
   const specialNote = getSpecialNote(docType);
 
@@ -129,7 +135,7 @@ export function DocumentCard({
         <Modal.Title>{currentDocument.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body style={{ padding: 0, height: "80vh" }}>
-        {currentDocument.type === "pdf" || currentDocument.type === "image" ? (
+        {currentDocument.type === "pdf" ? (
           <iframe
             src={currentDocument.url}
             width="100%"
@@ -154,7 +160,7 @@ export function DocumentCard({
         <Button
           variant="primary"
           href={
-            currentDocument.type === "pdf" || currentDocument.type === "image"
+            currentDocument.type === "pdf"
               ? currentDocument.url
               : currentDocument.url.split("src=")[1]
               ? decodeURIComponent(currentDocument.url.split("src=")[1])
@@ -209,6 +215,14 @@ export function DocumentCard({
         </div>
       </div>
       <ViewerModal />
+      
+      {/* ImageLightbox component for images */}
+      <ImageLightbox
+        isOpen={showImageLightbox}
+        onClose={() => setShowImageLightbox(false)}
+        imageUrl={documentPath}
+        altText={title}
+      />
     </>
   );
 }
