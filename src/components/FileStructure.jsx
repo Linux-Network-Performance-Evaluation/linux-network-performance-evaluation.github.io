@@ -15,9 +15,9 @@ function FileStructure() {
               </p>
               <div className="text-center mb-4">
                 <small className="text-muted">
-                  <em>Last Updated: October 30, 2025</em>
+                  <em>Last Updated: November 4, 2025</em>
                   <br />
-                  <strong>Total Files: 950+</strong>
+                  <strong>Total Directories: 145, Total Files: 446</strong>
                 </small>
               </div>
             </Col>
