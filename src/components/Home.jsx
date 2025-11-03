@@ -20,7 +20,7 @@ function Home() {
             <Col>
               <h2>Project Overview</h2>
               <p>
-                This portfolio presents our project evaluating the performance
+                This portfolio presents our project evaluating the network performance
                 of Linux-based operating systems in a physical environment.
                 Explore each section using the navigation above to learn about
                 our research, planning, teamwork, development, and more.
@@ -39,7 +39,7 @@ function Home() {
                 latest Linux-based Operating System distributions –{" "}
                 <strong>Fedora, Ubuntu, and Kali Linux</strong>. These operating
                 systems need to be configured as software routers before running
-                evaluations. Tools such as <strong>D-ITG</strong> will be used
+                evaluations. The tool <strong><a href="https://traffic.comics.unina.it/software/ITG/">D-ITG</a></strong> will be used
                 to generate evaluation traffic.
               </p>
 
@@ -114,8 +114,8 @@ function Home() {
                           methodology
                         </li>
                         <li>
-                          Include requirement analysis, planning, case
-                          development, environment setup, execution, and closure
+                          Include Requirement Analysis, Planning, Case
+                          Development, Environment Setup, Execution, and Closure
                         </li>
                       </ul>
                     </Card.Body>
