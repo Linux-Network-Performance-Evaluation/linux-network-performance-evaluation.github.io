@@ -20,10 +20,11 @@ function Home() {
             <Col>
               <h2>Project Overview</h2>
               <p>
-                This portfolio presents our project evaluating the network performance
-                of Linux-based operating systems in a physical environment.
-                Explore each section using the navigation above to learn about
-                our research, planning, teamwork, development, and more.
+                This portfolio presents our project evaluating the network
+                performance of Linux-based operating systems in a physical
+                environment. Explore each section using the navigation above to
+                learn about our research, planning, teamwork, development, and
+                more.
               </p>
             </Col>
           </Row>
@@ -39,8 +40,13 @@ function Home() {
                 latest Linux-based Operating System distributions –{" "}
                 <strong>Fedora, Ubuntu, and Kali Linux</strong>. These operating
                 systems need to be configured as software routers before running
-                evaluations. The tool <strong><a href="https://traffic.comics.unina.it/software/ITG/">D-ITG</a></strong> will be used
-                to generate evaluation traffic.
+                evaluations. The tool{" "}
+                <strong>
+                  <a href="https://traffic.comics.unina.it/software/ITG/">
+                    D-ITG
+                  </a>
+                </strong>{" "}
+                will be used to generate evaluation traffic.
               </p>
 
               <h3>Objectives to be achieved include:</h3>
@@ -107,7 +113,8 @@ function Home() {
                       </Card.Title>
                       <ul>
                         <li>
-                          Each evaluation will range from 128 Bytes to 1536 Bytes
+                          Each evaluation will range from 128 Bytes to 1536
+                          Bytes
                         </li>
                         <li>
                           Follow the Software Testing Life Cycle (STLC)
@@ -131,14 +138,18 @@ function Home() {
           <Row>
             <Col>
               <h2 className="text-center mb-4">Team Members</h2>
+              <p className="text-center mb-4 text-muted">
+                Click on each team member's name to visit their GitHub profile
+              </p>
               <div className="team-grid">
                 {teamMembers.map((member, index) => (
                   <a
                     key={index}
                     className="team-member"
-                    href={member.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={member.url || "#"}
+                    target={member.url ? "_blank" : "_self"}
+                    rel={member.url ? "noopener noreferrer" : ""}
+                    onClick={member.url ? undefined : (e) => e.preventDefault()}
                   >
                     {member.name}
                   </a>

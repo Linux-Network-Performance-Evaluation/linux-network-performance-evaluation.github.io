@@ -2,8 +2,10 @@ import { Modal, Button, Badge, Alert, Spinner } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import ImageLightbox from "./ImageLightbox";
-import mammoth from "mammoth";
-import * as XLSX from "xlsx";
+
+// Lazy load heavy libraries
+const loadMammoth = () => import("mammoth");
+const loadXLSX = () => import("xlsx");
 
 // CSS styles for document content
 const documentStyles = `
@@ -213,6 +215,10 @@ export function DocumentCard({
       setIsLoading(true);
       setLoadError(null);
 
+      // Dynamically load mammoth
+      const mammothModule = await loadMammoth();
+      const mammoth = mammothModule.default;
+
       const response = await fetch(filePath);
       if (!response.ok) {
         throw new Error(`Failed to fetch document: ${response.statusText}`);
@@ -254,6 +260,10 @@ export function DocumentCard({
     try {
       setIsLoading(true);
       setLoadError(null);
+
+      // Dynamically load XLSX
+      const XLSXModule = await loadXLSX();
+      const XLSX = XLSXModule.default || XLSXModule;
 
       const response = await fetch(filePath);
       if (!response.ok) {
