@@ -103,7 +103,7 @@ function Poster() {
             justifyContent: "center",
             alignItems: "center",
             zIndex: 9999,
-            cursor: "zoom-out",
+            cursor: "pointer",
           }}
           onClick={closeLightbox}
         >
