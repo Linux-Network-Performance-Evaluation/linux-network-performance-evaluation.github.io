@@ -427,6 +427,8 @@ export function DocumentCard({
         return "Click 'View' to preview presentation online";
       case "excel":
         return "Click 'View' for interactive spreadsheet preview";
+      case "image":
+        return "Click to view in full size";
       default:
         return null;
     }
@@ -568,7 +570,6 @@ export function DocumentCard({
           </div>
           <div className="flex-grow-1">
             <p className="card-text">{description}</p>
-            {specialNote && <small className="text-muted">{specialNote}</small>}
 
             {/* Image preview for image files */}
             {docType === "image" && (
@@ -592,13 +593,16 @@ export function DocumentCard({
                     openDocumentViewer(documentPath, title, docType)
                   }
                 />
-                <p className="mt-2 text-muted">
-                  <small>Click to view in full size</small>
-                </p>
               </div>
             )}
           </div>
           <div className="mt-auto">
+            {/* Special note positioned consistently at the bottom */}
+            {specialNote && (
+              <div className="mb-2">
+                <small className="text-muted">{specialNote}</small>
+              </div>
+            )}
             <div className="d-flex gap-2 align-items-center flex-wrap">
               {canViewInline && (
                 <Button

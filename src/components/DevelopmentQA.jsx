@@ -617,33 +617,40 @@ function DevelopmentQA() {
                                   <Card.Header>
                                     <h6 className="mb-0">Delay Comparison</h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png"
-                                      alt="IPv4 Delay Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                        transition: "transform 0.3s ease",
-                                      }}
-                                      onMouseEnter={(e) =>
-                                        (e.target.style.transform =
-                                          "scale(1.02)")
-                                      }
-                                      onMouseLeave={(e) =>
-                                        (e.target.style.transform = "scale(1)")
-                                      }
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png",
-                                          "IPv4 Delay Comparison"
-                                        )
-                                      }
-                                    />
-                                    <p className="mt-2 text-muted">
-                                      <small>Click to view in full size</small>
-                                    </p>
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png"
+                                        alt="IPv4 Delay Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Delay.png",
+                                            "IPv4 Delay Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -652,33 +659,40 @@ function DevelopmentQA() {
                                   <Card.Header>
                                     <h6 className="mb-0">Jitter Comparison</h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png"
-                                      alt="IPv4 Jitter Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                        transition: "transform 0.3s ease",
-                                      }}
-                                      onMouseEnter={(e) =>
-                                        (e.target.style.transform =
-                                          "scale(1.02)")
-                                      }
-                                      onMouseLeave={(e) =>
-                                        (e.target.style.transform = "scale(1)")
-                                      }
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png",
-                                          "IPv4 Jitter Comparison"
-                                        )
-                                      }
-                                    />
-                                    <p className="mt-2 text-muted">
-                                      <small>Click to view in full size</small>
-                                    </p>
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png"
+                                        alt="IPv4 Jitter Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Jitter.png",
+                                            "IPv4 Jitter Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -689,33 +703,40 @@ function DevelopmentQA() {
                                       Throughput Comparison
                                     </h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png"
-                                      alt="IPv4 Throughput Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                        transition: "transform 0.3s ease",
-                                      }}
-                                      onMouseEnter={(e) =>
-                                        (e.target.style.transform =
-                                          "scale(1.02)")
-                                      }
-                                      onMouseLeave={(e) =>
-                                        (e.target.style.transform = "scale(1)")
-                                      }
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png",
-                                          "IPv4 Throughput Comparison"
-                                        )
-                                      }
-                                    />
-                                    <p className="mt-2 text-muted">
-                                      <small>Click to view in full size</small>
-                                    </p>
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png"
+                                        alt="IPv4 Throughput Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Throughput.png",
+                                            "IPv4 Throughput Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -726,33 +747,40 @@ function DevelopmentQA() {
                                       Packet Loss Comparison
                                     </h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png"
-                                      alt="IPv4 Packet Loss Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                        transition: "transform 0.3s ease",
-                                      }}
-                                      onMouseEnter={(e) =>
-                                        (e.target.style.transform =
-                                          "scale(1.02)")
-                                      }
-                                      onMouseLeave={(e) =>
-                                        (e.target.style.transform = "scale(1)")
-                                      }
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png",
-                                          "IPv4 Packet Loss Comparison"
-                                        )
-                                      }
-                                    />
-                                    <p className="mt-2 text-muted">
-                                      <small>Click to view in full size</small>
-                                    </p>
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png"
+                                        alt="IPv4 Packet Loss Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv4_Comparison_Packet Loss.png",
+                                            "IPv4 Packet Loss Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -769,33 +797,40 @@ function DevelopmentQA() {
                                   <Card.Header>
                                     <h6 className="mb-0">Delay Comparison</h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png"
-                                      alt="IPv6 Delay Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                        transition: "transform 0.3s ease",
-                                      }}
-                                      onMouseEnter={(e) =>
-                                        (e.target.style.transform =
-                                          "scale(1.02)")
-                                      }
-                                      onMouseLeave={(e) =>
-                                        (e.target.style.transform = "scale(1)")
-                                      }
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png",
-                                          "IPv6 Delay Comparison"
-                                        )
-                                      }
-                                    />
-                                    <p className="mt-2 text-muted">
-                                      <small>Click to view in full size</small>
-                                    </p>
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png"
+                                        alt="IPv6 Delay Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Delay.png",
+                                            "IPv6 Delay Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -804,33 +839,40 @@ function DevelopmentQA() {
                                   <Card.Header>
                                     <h6 className="mb-0">Jitter Comparison</h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png"
-                                      alt="IPv6 Jitter Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                        transition: "transform 0.3s ease",
-                                      }}
-                                      onMouseEnter={(e) =>
-                                        (e.target.style.transform =
-                                          "scale(1.02)")
-                                      }
-                                      onMouseLeave={(e) =>
-                                        (e.target.style.transform = "scale(1)")
-                                      }
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png",
-                                          "IPv6 Jitter Comparison"
-                                        )
-                                      }
-                                    />
-                                    <p className="mt-2 text-muted">
-                                      <small>Click to view in full size</small>
-                                    </p>
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png"
+                                        alt="IPv6 Jitter Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Jitter.png",
+                                            "IPv6 Jitter Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -841,22 +883,40 @@ function DevelopmentQA() {
                                       Throughput Comparison
                                     </h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png"
-                                      alt="IPv6 Throughput Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                      }}
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png",
-                                          "IPv6 Throughput Comparison"
-                                        )
-                                      }
-                                    />
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png"
+                                        alt="IPv6 Throughput Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Throughput.png",
+                                            "IPv6 Throughput Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -867,22 +927,40 @@ function DevelopmentQA() {
                                       Packet Loss Comparison
                                     </h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png"
-                                      alt="IPv6 Packet Loss Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                      }}
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png",
-                                          "IPv6 Packet Loss Comparison"
-                                        )
-                                      }
-                                    />
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png"
+                                        alt="IPv6 Packet Loss Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/IPv6_Comparison_Packet Loss.png",
+                                            "IPv6 Packet Loss Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -904,22 +982,40 @@ function DevelopmentQA() {
                                       Delay: IPv4 vs IPv6
                                     </h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png"
-                                      alt="IPv4 vs IPv6 Delay Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                      }}
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png",
-                                          "IPv4 vs IPv6 Delay Comparison"
-                                        )
-                                      }
-                                    />
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png"
+                                        alt="IPv4 vs IPv6 Delay Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Delay.png",
+                                            "IPv4 vs IPv6 Delay Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -930,22 +1026,40 @@ function DevelopmentQA() {
                                       Jitter: IPv4 vs IPv6
                                     </h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png"
-                                      alt="IPv4 vs IPv6 Jitter Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                      }}
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png",
-                                          "IPv4 vs IPv6 Jitter Comparison"
-                                        )
-                                      }
-                                    />
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png"
+                                        alt="IPv4 vs IPv6 Jitter Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Jitter.png",
+                                            "IPv4 vs IPv6 Jitter Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -956,22 +1070,40 @@ function DevelopmentQA() {
                                       Throughput: IPv4 vs IPv6
                                     </h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png"
-                                      alt="IPv4 vs IPv6 Throughput Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                      }}
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png",
-                                          "IPv4 vs IPv6 Throughput Comparison"
-                                        )
-                                      }
-                                    />
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png"
+                                        alt="IPv4 vs IPv6 Throughput Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Throughput.png",
+                                            "IPv4 vs IPv6 Throughput Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -982,22 +1114,40 @@ function DevelopmentQA() {
                                       Packet Loss: IPv4 vs IPv6
                                     </h6>
                                   </Card.Header>
-                                  <Card.Body className="text-center">
-                                    <img
-                                      src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png"
-                                      alt="IPv4 vs IPv6 Packet Loss Comparison"
-                                      className="img-fluid"
-                                      style={{
-                                        maxHeight: "400px",
-                                        cursor: "pointer",
-                                      }}
-                                      onClick={() =>
-                                        handleImageClick(
-                                          "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png",
-                                          "IPv4 vs IPv6 Packet Loss Comparison"
-                                        )
-                                      }
-                                    />
+                                  <Card.Body className="text-center d-flex flex-column">
+                                    <div className="flex-grow-1 d-flex align-items-center justify-content-center">
+                                      <img
+                                        src="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png"
+                                        alt="IPv4 vs IPv6 Packet Loss Comparison"
+                                        className="img-fluid"
+                                        style={{
+                                          maxHeight: "400px",
+                                          cursor: "pointer",
+                                          transition: "transform 0.3s ease",
+                                        }}
+                                        onMouseEnter={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1.02)")
+                                        }
+                                        onMouseLeave={(e) =>
+                                          (e.target.style.transform =
+                                            "scale(1)")
+                                        }
+                                        onClick={() =>
+                                          handleImageClick(
+                                            "/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/Comparison_IPv4_vs_IPv6_Packet Loss.png",
+                                            "IPv4 vs IPv6 Packet Loss Comparison"
+                                          )
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-auto">
+                                      <p className="mt-2 text-muted mb-0">
+                                        <small>
+                                          Click to view in full size
+                                        </small>
+                                      </p>
+                                    </div>
                                   </Card.Body>
                                 </Card>
                               </Col>
@@ -1388,7 +1538,7 @@ function DevelopmentQA() {
                 <Row className="mb-4">
                   <Col md={6} className="mb-3">
                     <DocumentCard
-                      title="Project Poster v4 (Final)"
+                      title="Project Poster (Final Version)"
                       description="Final version of the academic poster presenting project methodology, results, and conclusions with all updates."
                       documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/poster_v4.png"
                       documentType="image"
@@ -1396,7 +1546,7 @@ function DevelopmentQA() {
                   </Col>
                   <Col md={6} className="mb-3">
                     <DocumentCard
-                      title="QR Code"
+                      title="Project Portfolio QR Code"
                       description="QR code linking to digital project resources and portfolio website for easy access."
                       documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/qr_code.svg"
                       documentType="image"
@@ -1406,29 +1556,32 @@ function DevelopmentQA() {
 
                 <h3>Poster Version History</h3>
                 <Row className="mb-4">
-                  <Col md={4} className="mb-3">
+                  <Col md={6} className="mb-3">
                     <DocumentCard
-                      title="Project Poster v3"
+                      title="Project Poster Version 3"
                       description="Third iteration of the project poster with further refinements and updated content."
                       documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v3.png"
                       documentType="image"
                     />
                   </Col>
-                  <Col md={4} className="mb-3">
+                  <Col md={6} className="mb-3">
                     <DocumentCard
-                      title="Project Poster v2"
+                      title="Project Poster Version 2"
                       description="Second iteration of the project poster with refined content and improved design."
                       documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v2.png"
                       documentType="image"
                     />
                   </Col>
-                  <Col md={4} className="mb-3">
+                  <Col md={6} className="mb-3">
                     <DocumentCard
-                      title="Project Poster v1"
+                      title="Project Poster Version 1"
                       description="Initial version of the project poster showing early design and content organisation."
                       documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v1.png"
                       documentType="image"
                     />
+                  </Col>
+                  <Col md={6} className="mb-3">
+                    {/* Empty column for balanced layout */}
                   </Col>
                 </Row>
 
@@ -1521,18 +1674,6 @@ function DevelopmentQA() {
                       title="Acknowledgements"
                       description="Recognition of contributors, supporters, and resources that facilitated project completion."
                       documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/12 Acknowledgements.docx"
-                    />
-                  </Col>
-                </Row>
-
-                <h3>Supporting Materials</h3>
-                <Row className="mb-4">
-                  <Col md={6} className="mb-3">
-                    <DocumentCard
-                      title="QR Code"
-                      description="QR code linking to digital project resources and portfolio website for easy access."
-                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/qr_code.svg"
-                      documentType="image"
                     />
                   </Col>
                 </Row>
