@@ -107,7 +107,7 @@ function Home() {
                       </Card.Title>
                       <ul>
                         <li>
-                          Each evaluation will range from 128 to 1536 bytes
+                          Each evaluation will range from 128 Bytes to 1536 Bytes
                         </li>
                         <li>
                           Follow the Software Testing Life Cycle (STLC)
