@@ -1608,23 +1608,23 @@ function DevelopmentQA() {
                   </Col>
                   <Col md={4} className="mb-3">
                     <DocumentCard
-                      title="Objectives"
-                      description="Clear project objectives and goals defining the scope and expected outcomes."
-                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/03 Objectives.docx"
-                    />
-                  </Col>
-                  <Col md={4} className="mb-3">
-                    <DocumentCard
-                      title="Project Impact"
-                      description="Analysis of project impact and significance within the field of network performance evaluation."
-                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/04 Project Impact.docx"
-                    />
-                  </Col>
-                  <Col md={4} className="mb-3">
-                    <DocumentCard
                       title="Goals"
                       description="Specific project goals and measurable outcomes targeted for achievement."
-                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/05 Goals.docx"
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/03 Goals.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Objectives"
+                      description="Clear project objectives and goals defining the scope and expected outcomes."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/04 Objectives.docx"
+                    />
+                  </Col>
+                  <Col md={4} className="mb-3">
+                    <DocumentCard
+                      title="Requirements"
+                      description="Project requirements and specifications defining the deliverables and acceptance criteria."
+                      documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Sections/05 Requirements.docx"
                     />
                   </Col>
                   <Col md={4} className="mb-3">
