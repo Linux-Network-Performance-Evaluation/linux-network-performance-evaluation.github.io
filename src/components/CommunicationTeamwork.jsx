@@ -43,7 +43,7 @@ function CommunicationTeamwork() {
                 <Card.Body>
                   <Card.Title className="h3">Communication Tools</Card.Title>
                   <Card.Text>
-                    We utilized various communication platforms to maintain
+                    We utilised various communication platforms to maintain
                     effective collaboration across different aspects of the
                     project.
                   </Card.Text>
@@ -158,7 +158,7 @@ function CommunicationTeamwork() {
                 <Col md={4} className="mb-3">
                   <DocumentCard
                     title="Team Meeting - Sep 25, 2025"
-                    description="Testing methodology finalization and resource allocation discussions."
+                    description="Testing methodology finalisation and resource allocation discussions."
                     documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team-Meetings/Meeting Minutes 2025-09-25 (Team).docx"
                   />
                 </Col>
@@ -615,7 +615,7 @@ function CommunicationTeamwork() {
                     <Col md={4} className="mb-3">
                       <DocumentCard
                         title="Client Meeting (19-06-25)"
-                        description="Project finalization and deliverables review."
+                        description="Project finalisation and deliverables review."
                         documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Mentor-Client Meeting Minutes/Meeting Minutes 19-06-2025 (Client) .docx"
                       />
                     </Col>
@@ -738,7 +738,7 @@ function CommunicationTeamwork() {
                     <Col md={4} className="mb-3">
                       <DocumentCard
                         title="Team Meeting (18-06-25)"
-                        description="Project wrap-up and deliverables finalization."
+                        description="Project wrap-up and deliverables finalisation."
                         documentPath="/Portfolio/03-Communication-and-Teamwork/Meetings/Minutes/Team Meeting Minutes/Meeting Minutes 18-06-2025 (Team).docx"
                       />
                     </Col>

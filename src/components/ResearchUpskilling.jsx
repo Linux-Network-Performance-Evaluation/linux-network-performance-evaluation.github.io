@@ -74,10 +74,10 @@ function ResearchUpskilling() {
               </Row>
             </Tab>
 
-            <Tab eventKey="qemu" title="QEMU Virtualization">
+            <Tab eventKey="qemu" title="QEMU Virtualisation">
               <h2>QEMU Setup Scripts</h2>
               <p>
-                Virtualization scripts for setting up testing environments
+                Virtualisation scripts for setting up testing environments
                 across different platforms and Linux distributions.
               </p>
 
@@ -163,7 +163,7 @@ function ResearchUpskilling() {
                 <li>Network performance testing tools (D-ITG, iPerf)</li>
                 <li>Software router configuration</li>
                 <li>Statistical analysis and data interpretation</li>
-                <li>QEMU virtualization technologies</li>
+                <li>QEMU virtualisation technologies</li>
               </ul>
 
               <h2>Key Learning Outcomes</h2>

@@ -667,12 +667,12 @@ function FileStructure() {
                 <p>
                   This R&D Project portfolio contains a comprehensive collection
                   of documentation, testing files, configurations, and project
-                  management artifacts organized into four main categories:
+                  management artifacts organised into four main categories:
                 </p>
                 <ol>
                   <li>
                     <strong>Research and Upskilling</strong> - Skills matrices,
-                    training materials, and virtualization scripts
+                    training materials, and virtualisation scripts
                   </li>
                   <li>
                     <strong>Planning and Control</strong> - Project proposals,

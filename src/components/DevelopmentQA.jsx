@@ -22,7 +22,7 @@ function DevelopmentQA() {
     "Linux (Fedora, Ubuntu, Kali)",
     "D-ITG Traffic Generator",
     "iPerf Network Testing",
-    "QEMU Virtualization",
+    "QEMU Virtualisation",
     "Python Scripting",
     "Network Configuration",
     "Statistical Analysis",
@@ -512,7 +512,7 @@ function DevelopmentQA() {
             <Col>
               <h2>Technologies & Tools</h2>
               <p className="mb-3">
-                Our project utilized a comprehensive set of technologies and
+                Our project utilised a comprehensive set of technologies and
                 tools for network performance evaluation:
               </p>
               <div className="d-flex flex-wrap gap-2">
@@ -590,7 +590,7 @@ function DevelopmentQA() {
                     </Card.Body>
                   </Card>
                 </Tab>
-                <Tab eventKey="visualizations" title="Data Visualizations">
+                <Tab eventKey="visualisations" title="Data Visualisations">
                   <Card className="shadow-sm">
                     <Card.Body>
                       <h3 className="mb-4">Performance Comparison Graphs</h3>
@@ -938,14 +938,14 @@ function DevelopmentQA() {
                             <Col md={4} className="mb-3">
                               <DocumentCard
                                 title="IPv4 Graphing Script"
-                                description="Python script for generating IPv4 performance comparison graphs and statistical visualizations."
+                                description="Python script for generating IPv4 performance comparison graphs and statistical visualisations."
                                 documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_ipv4.py"
                               />
                             </Col>
                             <Col md={4} className="mb-3">
                               <DocumentCard
                                 title="IPv6 Graphing Script"
-                                description="Python script for generating IPv6 performance comparison graphs and data visualizations."
+                                description="Python script for generating IPv6 performance comparison graphs and data visualisations."
                                 documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Python-Graphs/graphing_ipv6.py"
                               />
                             </Col>
@@ -1051,7 +1051,7 @@ function DevelopmentQA() {
                     <Col md={4} className="mb-3">
                       <DocumentCard
                         title="Kali Linux Methodology"
-                        description="Specialized testing methodology for Kali Linux including security-focused configuration and network performance evaluation procedures."
+                        description="Specialised testing methodology for Kali Linux including security-focused configuration and network performance evaluation procedures."
                         documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Methodology - Kali Linux.docx"
                       />
                     </Col>
@@ -1077,7 +1077,7 @@ function DevelopmentQA() {
                     <Col md={6} className="mb-3">
                       <DocumentCard
                         title="Chrony NTP Server Time Synchronisation"
-                        description="Technical documentation for implementing Chrony NTP server for precise time synchronization across testing environments."
+                        description="Technical documentation for implementing Chrony NTP server for precise time synchronisation across testing environments."
                         documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Chrony NTP server time synchronisation.docx"
                       />
                     </Col>
@@ -1088,7 +1088,7 @@ function DevelopmentQA() {
                   <h3>Data Processing & Analysis</h3>
                   <p>
                     Tools and scripts for processing raw test data, generating
-                    comparative analysis, and creating visualizations of network
+                    comparative analysis, and creating visualisations of network
                     performance results.
                   </p>
 
@@ -1103,7 +1103,7 @@ function DevelopmentQA() {
                     <Col md={6} className="mb-3">
                       <DocumentCard
                         title="Ubuntu-Fedora Sample Graphing"
-                        description="Sample graphing and visualization templates for comparing Ubuntu and Fedora performance metrics."
+                        description="Sample graphing and visualisation templates for comparing Ubuntu and Fedora performance metrics."
                         documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Logs/Ubuntu_Fedora_Sample_Graphing.xlsx"
                       />
                     </Col>
@@ -1127,7 +1127,7 @@ function DevelopmentQA() {
 
                   <h4>Generated Performance Graphs</h4>
                   <p>
-                    Automatically generated comparative visualizations showing
+                    Automatically generated comparative visualisations showing
                     network performance differences across distributions and
                     protocols.
                   </p>
@@ -1163,7 +1163,7 @@ function DevelopmentQA() {
                   <h3>Network Configuration Files</h3>
                   <p>
                     Complete system and network configuration files for all
-                    testing environments including time synchronization, network
+                    testing environments including time synchronisation, network
                     interfaces, and device rules.
                   </p>
 
@@ -1188,7 +1188,7 @@ function DevelopmentQA() {
                     <Col md={4} className="mb-3">
                       <DocumentCard
                         title="Ubuntu Chrony Configuration"
-                        description="Time synchronization configuration for Ubuntu testing environment."
+                        description="Time synchronisation configuration for Ubuntu testing environment."
                         documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Configs/Ubuntu/pc1/etc/chrony/chrony.conf"
                         documentType="config"
                       />
@@ -1280,7 +1280,7 @@ function DevelopmentQA() {
                     <Col md={4} className="mb-3">
                       <DocumentCard
                         title="Kali Package Installer"
-                        description="Specialized package installation script for Kali Linux including security and networking tools required for testing."
+                        description="Specialised package installation script for Kali Linux including security and networking tools required for testing."
                         documentPath="/Portfolio/04-Development-and-Quality-Assurance/Evaluation-Testing/Packages/Kali/download_kali_packages.sh"
                         documentType="code"
                       />
@@ -1297,7 +1297,7 @@ function DevelopmentQA() {
             <Col>
               <h2>Project Poster</h2>
               <p>
-                Academic poster presentation summarizing the project
+                Academic poster presentation summarising the project
                 methodology, findings, and outcomes for conference presentation
                 and project showcase.
               </p>
@@ -1334,7 +1334,7 @@ function DevelopmentQA() {
                 <Col md={4} className="mb-3">
                   <DocumentCard
                     title="Project Poster v1"
-                    description="Initial version of the project poster showing early design and content organization."
+                    description="Initial version of the project poster showing early design and content organisation."
                     documentPath="/Portfolio/04-Development-and-Quality-Assurance/Poster/Version-History/poster_v1.png"
                     documentType="image"
                   />
@@ -1554,7 +1554,7 @@ function DevelopmentQA() {
                 <Tab eventKey="router-config" title="Router Configuration">
                   <h3>Router Configuration Checklists</h3>
                   <p>
-                    Standardized configuration checklists ensuring consistent
+                    Standardised configuration checklists ensuring consistent
                     router setup across all Linux distributions for reliable
                     performance testing.
                   </p>
@@ -1577,7 +1577,7 @@ function DevelopmentQA() {
                     <Col md={4} className="mb-3">
                       <DocumentCard
                         title="Kali Router Configuration"
-                        description="Specialized configuration checklist for Kali Linux router setup and network interface management."
+                        description="Specialised configuration checklist for Kali Linux router setup and network interface management."
                         documentPath="/Portfolio/04-Development-and-Quality-Assurance/Quality-Assurance/Router Configuration/Router Configuration Checklist - Kali v1.0.pdf"
                       />
                     </Col>
