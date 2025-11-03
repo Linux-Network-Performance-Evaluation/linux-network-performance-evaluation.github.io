@@ -94,6 +94,13 @@ function CommunicationTeamwork() {
                     documentPath="/Portfolio/03-Communication-and-Teamwork/Client Feedback Form_signed.pdf"
                   />
                 </Col>
+                <Col md={6} className="mb-3">
+                  <DocumentCard
+                    title="Deliverable Acceptance Form"
+                    description="Form to be signed by the client upon receipt and acceptance of the finished project."
+                    documentPath="/Portfolio/03-Communication-and-Teamwork/Deliverable Acceptance Form.docx"
+                  />
+                </Col>
               </Row>
             </Tab>
 
