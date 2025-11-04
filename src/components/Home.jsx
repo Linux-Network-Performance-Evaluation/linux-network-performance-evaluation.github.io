@@ -19,7 +19,7 @@ function Home() {
     },
     {
       name: "Zafar Azad",
-      github: "",
+      github: "https://github.com/jaf12345",
       linkedin: "https://www.linkedin.com/in/zafar-a-742134267/",
     },
     {
