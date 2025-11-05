@@ -1,16 +1,15 @@
 import { useState } from "react";
-import ReactDOM from "react-dom";
 import {
   Badge,
-  Button,
   Card,
   Col,
   Container,
   Row,
   Tab,
   Table,
-  Tabs,
+  Tabs
 } from "react-bootstrap";
+import ReactDOM from "react-dom";
 import { DocumentCard } from "./DocumentViewer";
 import ImageLightbox from "./ImageLightbox";
 
@@ -385,8 +384,8 @@ function DevelopmentQA() {
                   {data.unit === "bps"
                     ? "bits per second"
                     : data.unit === "%"
-                    ? "percentage"
-                    : "milliseconds"}
+                      ? "percentage"
+                      : "milliseconds"}
                 </small>
               </div>
               <div className="table-container">
@@ -397,9 +396,8 @@ function DevelopmentQA() {
                         {data.headers.map((header, index) => (
                           <th
                             key={index}
-                            className={`text-center ${
-                              header.includes("UDP") ? "udp-header" : ""
-                            }`}
+                            className={`text-center ${header.includes("UDP") ? "udp-header" : ""
+                              }`}
                           >
                             {index === 0 ? (
                               header
@@ -425,9 +423,8 @@ function DevelopmentQA() {
                             return (
                               <td
                                 key={cellIndex}
-                                className={`text-center ${
-                                  isUdpColumn ? "udp-cell" : ""
-                                }`}
+                                className={`text-center ${isUdpColumn ? "udp-cell" : ""
+                                  }`}
                               >
                                 {cellIndex === 0
                                   ? cell
@@ -499,7 +496,6 @@ function DevelopmentQA() {
                       <li>Test case development and validation</li>
                       <li>Automated testing procedures</li>
                       <li>Statistical validation methods</li>
-                      <li>95% confidence interval compliance</li>
                       <li>Reproducibility verification</li>
                     </ul>
                   </Card.Body>
@@ -550,8 +546,7 @@ function DevelopmentQA() {
                   <Col lg={4} className="mb-3">
                     <h4>Data Analysis</h4>
                     <p>
-                      Statistical analysis of results with confidence intervals
-                      and comparative performance metrics across distributions.
+                      Statistical analysis of results with comparative performance metrics across distributions.
                     </p>
                   </Col>
                 </Row>
@@ -629,12 +624,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -671,12 +666,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -715,12 +710,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -759,12 +754,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -809,12 +804,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -851,12 +846,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -895,12 +890,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -939,12 +934,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -994,12 +989,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -1038,12 +1033,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -1082,12 +1077,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -1126,12 +1121,12 @@ function DevelopmentQA() {
                                           transition: "transform 0.3s ease",
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1.02)")
+                                        (e.target.style.transform =
+                                          "scale(1.02)")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.transform =
-                                            "scale(1)")
+                                        (e.target.style.transform =
+                                          "scale(1)")
                                         }
                                         onClick={() =>
                                           handleImageClick(
@@ -1201,7 +1196,6 @@ function DevelopmentQA() {
                           Data Collection Methodology
                         </Card.Title>
                         <ul className="mb-0">
-                          <li>95% confidence interval measurements</li>
                           <li>
                             Multiple test runs for statistical significance
                           </li>

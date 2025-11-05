@@ -125,10 +125,6 @@ function Home() {
                           Evaluate for throughput, delay, jitter, and packet
                           loss
                         </li>
-                        <li>
-                          Any evaluation that falls outside the 95% confidence
-                          interval needs to be re-run
-                        </li>
                       </ul>
                     </Card.Body>
                   </Card>
